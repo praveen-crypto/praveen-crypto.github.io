@@ -10,10 +10,9 @@ body {
     height:100%
 }
 
-/* NAVIGATION STYLE */
+/* NAVIGATION START */
 button span{
     background-color:white;
-    color:white;
 }
 
 nav{
@@ -37,31 +36,32 @@ nav{
     width:110px;
     background-image: linear-gradient(to right, #F87149,#F02E5F);
 }
+/* NAVIGATION START */
+
 
 /* Welcome Page START*/
-
 .welcome-page{
-    padding-top:16%;
+    margin-top:10%;
 }
 
-.welcome-text-1 h1{
+.welcome-page h1{
     letter-spacing: 0px;
     font-weight:bold;
     font-size: 5vw;
     padding-bottom:10px;
 }
 
-.welcome-text-2 h5{
+.welcome-page h5{
     font-weight:bold;
-    font-size:1.5vw;
+    font-size:2.5vw;
 }
 
-.welcome-text-2 mark{
+.welcome-page mark{
     background: -webkit-linear-gradient(#F87149, #F02E5F);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-weight:bold;
-    font-size: 1.5vw;
+    font-size: 2.5vw;
 }
 
 .explore-btn{
@@ -84,7 +84,7 @@ nav{
 }
 
 .arrow-down .fas{
-    padding-top:10px;
+    
     font-size: 95px;
     transform: scale(1.5, 1) ;
     -webkit-text-stroke: 14px #08080B;
@@ -95,14 +95,14 @@ nav{
 
 
 /* PRODUCTS */
-
 .products h1{
-    font-size: 3em;
+    font-size: 5vw;
     font-weight: bold;
 }
 
 .products sup{
-    font-size: large;
+    font-size: 1vw;
+
 }
 
 .products .lead{
@@ -111,13 +111,12 @@ nav{
     text-align: left;
 }
 
-.learn-more h5{
+.learn-more .btn{
     background-image: linear-gradient(to right, #F87149, #F02E5F);
-    padding: 12px;
-    width:125px;
+    width:auto;
     border:none;
-    border-radius: 15px; 
-    font-size: 1em;
+    border-radius: 15px;
+    font-size: 1vw;
 }
 
 .row hr{
@@ -139,8 +138,6 @@ nav{
     color: #d8c9b2;
     font-weight: bold;
 }
-
-
 
 /* ABOUT END */
 
@@ -184,11 +181,8 @@ nav{
 
 
 
-
-
-
 /* Media Queries*/
-@media screen and (max-width: 1710px){
+@media screen and (min-width: 1200px){
     .contact-us{
         width:auto;
     }
@@ -207,5 +201,77 @@ nav{
 }
  
 @media screen and (max-width: 576px){
+    .welcome-page{
+        margin-top:25%;
+    }
+
+    .welcome-page h1{
+        font-size: 7vw;
+        padding-bottom:20px;
+    }
+    
+    .welcome-page h5{
+        font-size:3.2vw;
+    }
+    
+    .welcome-page mark{
+        font-size: 3.2vw;
+    }
+
+    .explore-btn{
+        margin-top:9%;
+    }
+
+    .explore-btn .btn{
+        margin: 20px;
+        padding: 10px;
+        width: 180px;
+        border-radius: 25px;
+        font-size:15pt;
+    }
+
+    /* PRODUCTS */
+    .products h1{
+        font-size: 6vw;
+    }
+
+    .products sup{
+        font-size: 4vw;
+    }
+
+    .products .lead{
+        font-weight: bold;
+        margin-top:10px;
+        font-size: 2.5vh;
+    }
+
+    .learn-more{
+        margin-top: 10px;
+    }
+
+    .learn-more .btn{
+        border:none;
+        border-radius: 15px;
+        font-size: 4vw;
+        color:white;
+    }
+
+    .row hr{
+        border: solid 3px #202020;
+        margin-bottom:30px;
+        margin-top:30px;
+    }
+
+    /* PRODUCTS END*/
+
+    .about h1{
+        font-size: 6vw;
+    }
+    
+    .about p{
+        color: #d8c9b2;
+        font-weight: bold;
+        font-size: 2.5vh;
+    }
 
 }
