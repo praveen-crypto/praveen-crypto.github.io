@@ -11,6 +11,11 @@ body {
     scroll-behavior: smooth;
 }
 
+.row hr{
+    border: solid 3px #202020;
+    background: #202020;
+}
+
 /* NAVIGATION START border-bottom: solid 3px #202020; */
 nav{
    
@@ -87,9 +92,7 @@ nav{
     border-radius: 20px;
     color: white;
 }
-.row hr{
-    border: solid 3px #202020;
-}
+
 /* PRODUCTS END*/
 
 
@@ -107,14 +110,8 @@ nav{
 
 
 /* TEAM START*/
-.team{
-    margin-bottom: 50px;
-}
-.team h1{
+#team h1{
     font-weight: bold;    
-}
-.team img{
-    border-radius:10px;
 }
 /* TEAM END*/
 
@@ -124,22 +121,17 @@ nav{
     color:black;
     background: #E5E0D9;
 }
-
 .footer-heading h1{
     font-weight: bold;
 }
-
 .footer-para p{
     font-size:1.3em;
 }
-
 .email-id address{
     font-weight:bold;
     font-size: 1.4em;
 }
 /* FOOTER  END */
-
-
 
 
 /* Media Queries*/
@@ -162,11 +154,11 @@ nav{
         font-size: clamp(2vw, 4.3vw, 90pt);
     }
     #welcome-page .heading-2{
-        padding-left:10%;
-        padding-right:10%;
+        padding-left:20%;
+        padding-right:20%;
     }
     .explore-btn{
-        margin-top:13%;
+        margin-top:9%;
         padding-bottom:1%; 
     }
     .explore-btn .btn{
@@ -190,7 +182,7 @@ nav{
     }
     .products .lead{
         font-size: clamp(5px, 1.1vw, 50px);
-        margin: 0% 0% 4% 0%;
+        margin: 1% 0% 4% 0%;
     }
     .products sup{
         font-size: clamp(5pt, 1vw, 50pt);
@@ -209,20 +201,57 @@ nav{
     }
     .about p{
         font-size: clamp(5px, 1.1vw, 50px);  
+        margin-top:1%;
     }
 
     /* ABOUT END */
+
     /* TEAM START*/
-    .team{
-        padding: 0% 0% 0% 0%
+    #team{
+        padding: 3% auto 3% auto;
     }
-    .team h1{
+    .team-members{
+        margin:2% 0% 5% 0%;
+        display:inline-flexbox;
+        flex-wrap:wrap;
+        text-align:center;
+    }
+    #team h1{
         font-weight: bold;    
     }
-    .team img{
+    #team img{
         border-radius:10px;
     }
+    .team-members h5{
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 10% 0% 0% 0%;
+    }
+    .team-members h6{
+        font-size: 1rem;
+        
+    }
     /* TEAM END*/
+
+    /* FOOTER */
+    .footer{
+        padding: 3% 0% 3% 0%;
+    }
+    .footer-heading h1{
+        font-weight: bold;
+        font-size: clamp(5px, 1.1vw, 50px);
+    }
+    .footer-para p{
+        font-size:clamp(5px, 1.1vw, 50px);
+        padding: 5% 0% 0% 0%
+    }
+    .email-id address{
+        font-weight:bold;
+        font-size: 1rem;
+    }
+    /* FOOTER  END */
+
+
 
 }
 
