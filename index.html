@@ -1,232 +1,399 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Mouseware</title>     
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-        
-        <link rel="stylesheet" href="fontawesome/css/all.css"></link>
-        <link rel="stylesheet" href="css/index.css"></link>
+      <title>VascularSim</title>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta content="width=device-width, initial-scale=1.0, name="viewport" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+      <!--  Fonts and icons  -->
+        <!-- Fonts and icons -->
+      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
+      <link rel="stylesheet" href="fontawesome/css/all.css"></link>
+      <!-- Material Kit CSS -->
+      <link href="assets/css/material-kit.css?v=2.0.7" rel="stylesheet" />
+
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <!------ Include the above in your HEAD tag ---------->
+          
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <!------ Include the above in your HEAD tag ---------->
     </head>
 
     <body>
-        <!-- NAVIGATION START -->
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <nav class="navbar navbar-color-on-scroll navbar-transparent fixed-top navbar-expand-lg"  color-on-scroll="100">
             <div class="container">
-                <!--<a class="navbar-brand " href="#"> <img src="Resources/logo.png" alt="DEXTROWARE"> </a> -->
-                
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarRes">
-                    <span class="navbar-toggler-icon "></span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-bar navbar-kebab"></span>
+                    <span class="navbar-toggler-bar navbar-kebab"></span>
+                    <span class="navbar-toggler-bar navbar-kebab"></span>
                 </button>
-                
-                <div class="collapse navbar-collapse " id="navbarRes">
-                    <ol class="navbar-nav ml-auto">
-                        <li class="navbar-item active">
-                            <a class="nav-link " href="#"> Home </a> 
-                        </li>
-                        <li class="navbar-item">
-                            <a class="nav-link" href="#"> Products </a>  
-                        </li>
-                        <li class="navbar-item">
-                            <a class="nav-link" href="#"> About </a>  
-                        </li>
-                        <li class="navbar-item contact-us">
-                            <a class="nav-link" href="#"> Contact Us </a> 
-                        </li>
-                    </ol>
+
+                <a class="navbar-brand" href="javascript:;">VascularSim</a>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                  <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="javascript:;">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="javascript:;">Features</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="javascript:;">Experiments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="javascript:;">Download</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="javascript:;">Contact us</a>
+                    </li>
+                  </ul>
+                  
                 </div>
             </div>
         </nav>
-        <!-- NAVIGATION END -->
 
-        <div class= "container-bg ">
-            <!-- WELCOME/INTRO SECTION START -->
-            <div class="container padding " id="welcome-page">
-                <div class="row text-center " >
-                    
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">                       
-                        <h1 class="heading-1"> We Provide Technology, <br>  to access Technology.</h1>
-                    </div>
 
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mx-auto">
-                        <div class="heading-2">
-                            <h5> We, at Dextroware, believe that Assistive technology is any device or
-                                system that <mark>helps people work around their challenges</mark></h5>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 explore-btn">
-                        <span class="btn"> Explore </span>
-                    </div>
-
-                    <div class="col-12 arrow-down">
-                        <i class="fas fa-chevron-down ">  </i>
-                    </div>
+        <div class="page-header header-filter" data-parallax="true" style="background-image: url('assets/img/background.png')">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 ml-auto mr-auto">
+                  <div class="brand text-center">
+                    <h1>VascularSim</h1>
+                    <h3 class="title text-center">Open-source Cardiovascular Simulator</h3>
+                  </div>
                 </div>
+              </div>
             </div>
-            <!-- WELCOME/INTRO SECTION END -->
-            
-            <!-- PRODUCTS SECTION START -->
-            <div class="container products">
-                <div class="row">
-                    <div class="col-12 col-sm-8 col-md-6 col-lg-6 ">
-                        <h1>Products so far.</h1>
-                        <h1>Mouseware<sup>TM</sup> </h1>                        
-                    </div>
-                </div>
-
-                <div class="row ">
-                    <div class="col-12 col-sm-12 col-md-8 col-lg-8 ">
-                        <p class="lead text-justify">Mouseware is an affordable head-wearable device that enables
-                            hands-free operation of computers & smartphones.</p>
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <div class="col-12 learn-more">
-                        <span class="btn">Learn more <i class="fas fa-arrow-right fa-xs"> </i></span>
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <div class="col">
-                        <hr>
-                    </div>
-                </div>
-
-            </div>
-            <!-- PRODUCTS SECTION END -->
-
-            <!-- ABOUT SECTION START -->
-            <div class="container about">
-                <div class="row">
-                    <div class="col-12">
-                        <h1>About</h1>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 justified-center ">
-                        <p class="lead text-justify"> Dextroware Devices, an IIT-M incubated company, will be a single stop for the development of 
-                            Assistive Technologies. We envision empowering differently-abled people across the world to lead
-                            more independent, meaningful, and connected lives through the use of simplistic, effective, 
-                            and affordable assistive devices.
-                        </p>
-                        <p class="lead text-justify">
-                            Our mission is to create a sustainable eco-system that fosters inclusive growth, not just for 
-                            differently-abled people, but also to make products that increase, maintain, or improve the 
-                            functional capabilities of normal people too.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col mt-1">
-                        <hr>
-                    </div>
-                </div>
-            </div>
-            <!-- ABOUT SECTION END -->
-
-            <!-- TEAM SECTION START -->
-            <div class="container" id="team">
-
-                <div class="row ">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
-                        <h1>Team</h1>
-                    </div>
-                </div>
-                
-                <div class="row team-members">
-
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-xl-2 ">
-                        <div class="team-img1">
-                            <img src="Resources/team.png" alt="logo" >
-                            <h5> Pravin Kumar </h5> 
-                            <h6> Co-Founder & CEO</h6>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-xl-2">
-                        <div class="team-img2">
-                            <img src="Resources/team.png" alt="logo" >
-                            <h5> Rahul </h5> 
-                            <h6> CTO</h6>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-md-4 col-xl-2">
-                        <div class="team-img3">
-                            <img src="Resources/team.png" alt="logo" >
-                            <h5> Gayathri </h5> 
-                            <h6> Co-Founder </h6>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- TEAM SECTION END -->
-
-            <!-- FOOTER SECTION START-->
-            <div class="footer">
-                <div class="container ">
-                    <div class="row">
-
-                        <div class="col-xl-6 ">
-                            <div class="row">
-                                <div class="col-xl-10">
-                                    <h1>We're here for any questions.</h1>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-xl-10 ">
-                                    <p class="lead text-left">
-                                        Feel free to get in touch with one of our sales
-                                        representatives for any questions you might have.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-xl-10 email-id">
-                                    <address>
-                                        hola@dextrowaredevices.com
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-6 ">
-                            <div class="row">
-                                <div class="col-xl-6">
-                                    <h4>Dextroware<sup>TM</sup> is sponsored by</h4>
-                                </div>
-                            </div>                           
-                        </div>
-
-                    </div>
-
-                    
-
-                    
-                    
-                </div>
-            </div>
-            
-
-            <!-- FOOTER SECTION END -->
-
-
-
         </div>
 
+        <div class="main main-raised">
+            <div class="container">
+              <div class="row homepage">
+                <div class="col-4 col-xs-12 intro-image">
+                  <img src="./assets/img/heart-logo.png" alt="heart-logo" style="height: 100%; width: 100%;">
+                </div>
+                <div class="col-2 col-xs-12 empty-space"></div>
+                <div class="col-6 col-xs-12 intro-para">
+                  <div class="homepage-content">
+                    <p>VascularSim is an opensource
+                      software for cardio-vascular
+                      simulation developed by Touch
+                      Lab – IIT Madras.
+                    </p>
+                    <p>
+                      Simulate blood pressure, flow
+                      and volume in any part of the 
+                      artery tree. Perform expirements
+                      and study their effects.
+                    </p>
+                    <p>
+                      This simulator can be used by medical
+                      students and researches involving
+                      quantitative physiology.
+                    </p>
+                    <button class="btn btn-primary btn-round homepage-download">DOWNLOAD</button>
+                  </div>
+                </div>
+              </div>
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+              <div class="row text-center features-small">
+                <div class="col-4 features-small-1">
+                  <div class="icon">
+                    <i class="fa fa-cogs" aria-hidden="true" style="font-size: 4rem;"></i>
+                  </div>
+                  <div class="features-small-content">
+                    <h5>Customize
+                      parameters</h5>
+                    <p>
+                      User set values for Blood and 
+                      heart properties such as elastance, 
+                      resistance and inductance.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-4 features-small-2">
+                  <div class="icon">
+                    <i class="fa fa-flask" aria-hidden="true" style="font-size: 4rem;"></i>
+                  </div>
+                  <div class="features-small-content">
+                    <h5>Perform Experiments</h5>
+                    <p>
+                      Simulate multiple experiments and
+                      study effects. Models continiously added.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-4 features-small-3">
+                  <div class="icon">
+                    <i class="fa fa-bar-chart" aria-hidden="true" style="font-size: 4rem;"></i>
+                  </div>
+                  <div class="features-small-content">
+                    <h5>Analyze Waveforms</h5>
+                    <p>
+                      Analyze the waveforms and 
+                      calculate pressure, flow, velocity
+                      and other values.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row features-main">
+                <div class="col-6 features-main-content">
+                  <h2>WHAT WE DO...</h2>
+                  <a href=""><p>Simulate blood pressure and flow in all of the major arteries</p></a>
+                  <a href=""><p>Simulate physiological conditions like stenosis</p></a>
+                  <a href=""><p>Perform practical experiments</p></a>
+                  <a href=""><p>More pysiological systems to be added soon</p></a>
+                </div>
+                <div class="col-6 features-main-image">
+                  <img src="./assets/img/laptop.png" alt="" style="height: 20rem; width: 30rem;">
+                </div>
+              </div>
+
+              <div class="row demo">
+                <div class="col-12 demo-content">
+                  <div class="heading-demo">
+                    <h2>Try a live demo ?</h2>
+                  </div>
+                  <div class="buttongroup-demo">
+                    <button class="btn btn-primary btn-round demo" style="width: 14rem;">Ascending Aorta</button>
+                    <button class="btn btn-primary btn-round demo" style="width: 14rem;">Subclavian Artery</button>
+                    <button class="btn btn-primary btn-round demo" style="width: 14rem;">Thoracic Aorta</button>
+                    <button class="btn btn-primary btn-round demo" style="width: 14rem;">Abdominal aorta</button>
+                    <button class="btn btn-primary btn-round demo" style="width: 14rem;">Radial Artery</button>
+                    <button class="btn btn-primary btn-round demo" style="width: 14rem;">Femoral Artery</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row text-center Graph">
+                <div class="col-12 demo-graph">
+                  <h1>Graph-HERE !!!</h1>
+                </div>
+              </div>
+
+              <div class="row contact-us">
+                <div class="col-6 contact-us-content">
+                  <h2>Contact US</h2>
+                  <p>
+                    You can view the entire project
+                    on our github page or go through
+                    our complete documentation. <br><br>
+                    If you wish to contact us, feel
+                    free to send us a mail. :)
+                  </p>
+                </div>
+                <div class="col-6 contact-us-buttons">
+                  <div class="buttongroup-demo">
+                    <button class="btn btn-primary btn-round" style="width: 8rem;">
+                      <i class="material-icons">group_work</i> GITHUB
+                    </button>
+                    <button class="btn btn-primary btn-round" style="width: 8rem;">
+                      <i class="material-icons">description</i> DOCS
+                    </button>
+                    <button class="btn btn-primary btn-round" style="width: 8rem;">
+                      <i class="material-icons">email</i> MAIL
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Team -->
+              <section id="team" class="pb-5">
+                <div class="container">
+                    <h5 class="section-title h1">DEV TEAM</h5>
+                    <div class="row">
+                        <!-- Team member -->
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                                <div class="mainflip">
+                                    <div class="frontside">
+                                        <div class="card">
+                                            <div class="card-body text-center">
+                                                <p><img class=" img-fluid" src="./assets/img/picture-manivannan.jpg" alt="card image"></p>
+                                                <h4 class="card-title">Dr.Manivannan M</h4>
+                                                <p class="card-text">Professor of Biomedical Engineering, Department of Applied Mechanics, IIT Madras.</p>
+                                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="backside">
+                                        <div class="card">
+                                            <div class="card-body text-center mt-4">
+                                                <h4 class="card-title">Dr. Manivannan M</h4>
+                                                <p class="card-text">Hello World ! <br> To connect with us, and to view more such projects visit our lab - TOUCH LAB. <br> We would love to connect with you on Linkedin too. :) </p>
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-facebook"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-twitter"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-skype"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-google"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./Team member -->
+                        <!-- Team member -->
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                                <div class="mainflip">
+                                    <div class="frontside">
+                                        <div class="card">
+                                            <div class="card-body text-center">
+                                                <p><img class=" img-fluid" src="./assets/img/picture-man.jpg" alt="card image"></p>
+                                                <h4 class="card-title">Arvindh Swaminathan MB</h4>
+                                                <!--<p class="card-text">This is basic card with image on top, title, description and button.</p>-->
+                                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="backside">
+                                        <div class="card">
+                                            <div class="card-body text-center mt-4">
+                                                <h4 class="card-title">Arvindh MB</h4>
+                                                <p class="card-text">Hello World ! <br> To connect with us, and to view more such projects visit our lab - TOUCH LAB. <br> We would love to connect with you on Linkedin too. :) </p>
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-facebook"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-twitter"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-skype"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-google"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./Team member -->
+                        <!-- Team member -->
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                                <div class="mainflip">
+                                    <div class="frontside">
+                                        <div class="card">
+                                            <div class="card-body text-center">
+                                                <p><img class=" img-fluid" src="./assets/img/picture-man.jpg" alt="card image"></p>
+                                                <h4 class="card-title">Praveen Kumar S</h4>
+                                                <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                                                <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="backside">
+                                        <div class="card">
+                                            <div class="card-body text-center mt-4">
+                                                <h4 class="card-title">Praveen</h4>
+                                                <p class="card-text">Hello World ! <br> To connect with us, and to view more such projects visit our lab - TOUCH LAB. <br> We would love to connect with you on Linkedin too. :) </p>
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-facebook"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-twitter"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-skype"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                            <i class="fa fa-google"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./Team member -->
+
+                    </div>
+                </div>
+                            </section>
+                            <!-- Team -->
+              
+            </div>
+
+            </div>
+        </div>
+
+        <footer class="footer footer-default" >
+        <div class="container">
+          <nav class="float-left">
+            <ul>
+              <li>
+                <a href="https://touchlab.iitm.ac.in/">
+                    Touch Lab
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        </footer>
+        <!--   Core JS Files   -->
+        <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
+        <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
+        <script src="assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+        <script src="assets/js/plugins/moment.min.js"></script>
+        <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+        <script src="assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+        <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+        <script src="assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+        <!--  Google Maps Plugin  -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+        <!-- Place this tag in your head or just before your close body tag. -->
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+        <script src="assets/js/material-kit.js?v=2.0.7" type="text/javascript"></script>
     </body>
 </html>
