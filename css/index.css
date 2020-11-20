@@ -1,0 +1,623 @@
+/* IMPORT REQUIRED FONT FAMILY */
+
+
+/* ==============================================================
+                        GLOBAL STYLE
+=================================================================*/
+
+html, body {
+    background-color: #08080b;
+    font-family: sans-serif;
+    color:white;
+    height:100vh;
+    scroll-behavior: smooth;
+}
+
+.row hr{
+    border: solid 3px #202020;
+    background: #202020;
+}
+
+/* ==============================================================
+                        NAVIGATION
+=================================================================*/
+nav{
+    background-color:rgba(8, 8, 11, 0.7);
+    scroll-behavior: smooth;
+    backdrop-filter: blur(30px);
+}
+
+.navbar-item{
+    padding-left:0.8rem;
+    padding-right:0.8rem;
+}
+
+.nav-link{
+    font-family: sans-serif ;
+    font-weight: bold;
+    font-size:0.9vw;
+}
+
+.contact-us{
+    border: none;
+    border-radius:17px;
+    width:110px;
+    background-image: linear-gradient(to right, #F87149,#F02E5F);
+}
+
+
+/* ==============================================================
+                        WELCOME PAGE
+=================================================================*/
+#welcome-page{
+    height:100vh;
+}
+
+#welcome-page h1{
+    font-stretch: extra-expanded;
+    font-weight:bold;    
+}
+
+#welcome-page .heading-2 *{
+    font-weight:bold;
+}
+
+#welcome-page mark{
+    background: -webkit-linear-gradient(#F87149, #F02E5F);
+    background-size: 50%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.explore-btn .btn{
+    border: none;
+    color: #E5E0D9;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #F87149, #F02E5F);
+    background-size: 300%;
+    transition: 0.6s;
+    font-weight:bold;
+}
+
+.arrow-down .fas{
+    font-size: 100px;
+    -webkit-text-stroke: 14px #08080B;
+}
+
+
+/* ==============================================================
+                        PRODUCTS
+=================================================================*/
+
+.products h1{
+    font-weight: bold;
+}
+.products .lead{
+    color:#d8c9b2;
+    font-weight: bold;
+}
+.learn-more .btn{
+    background-image: linear-gradient(to right, #F87149, #F02E5F);
+    width:auto;
+    border:none;
+    border-radius: 20px;
+    color: white;
+}
+
+
+
+/* ==============================================================
+                        ABOUT
+=================================================================*/
+.about h1{
+    font-weight: bold;
+}
+
+.about p{
+    color: #d8c9b2;
+    font-weight: bold;
+}
+
+
+/* ==============================================================
+                        TEAM
+=================================================================*/
+
+#team h1{
+    font-weight: bold;    
+}
+.team-members p{
+    font-size: 0.9rem;
+    color:rgba(210, 210, 210, 0.8)
+}
+
+
+/* ==============================================================
+                        FOOTER
+=================================================================*/
+footer{
+    color:black;
+    background: #E5E0D9;
+}
+.section-1 h1{
+    font-weight: bold;
+    font-size:1.7rem;
+    margin-bottom:2%;
+    width:80%;
+}
+.section-1 p{
+    color:rgba(100, 100, 100);
+    font-weight: 500;
+    font-size:1.2rem;
+    margin-top:3%;
+}
+address{
+    font-weight:bold;
+    font-size: 1rem;
+}
+
+.section-2 h4{
+    font-size:1.4rem;
+    font-weight: bold;
+
+}
+.section-2 sup{
+    font-size: 0.7rem;
+}
+
+
+
+
+/* ==============================================================
+                        MEDIA QUUEIRIES
+=================================================================*/
+
+@media screen and (max-width: 1920px){
+
+    /* ============== GLOBAL =========== */
+    .row hr{
+        margin: 5% 0% 5% 0%;
+    }
+    .contact-us{
+        width:auto;
+    }
+    .nav-link{
+        font-size: 0.9vw;
+    }
+
+    /* ============== WELCOME =========== */
+    #welcome-page .heading-1{
+        padding-top: 20vh;
+        padding-bottom:2%;
+        font-size: 4.5vmax;
+        width:auto;
+        
+    }
+
+    .heading-2 *{
+        font-size: 3vmin;
+    }
+
+    .explore-btn{
+        margin-top: 12vh;
+         
+    }
+
+    .explore-btn .btn{
+        margin: 20px;
+        padding: 15px;
+        width: 220px;
+        border-radius: 40px;   
+        font-size:1.9rem;
+    }
+    .arrow-down .fas{
+        transform: scale(1.8, 1);
+    }
+    
+
+    /* ============== PRODUCTS =========== */
+    #products h1{
+        font-size: clamp(1vw, 2vw, 60pt);
+        font-weight: bold;
+    }
+    #products .lead{
+        font-size: clamp(5px, 1.1vw, 50px);
+        margin: 1% 0% 4% 0%;
+        color:#d8c9b2;
+        font-weight: bold;
+    }
+    #products sup{
+        font-size: clamp(5pt, 1vw, 50pt);
+
+    }
+    .learn-more .btn{
+        font-size: clamp(5px, 1.1vw, 50px);
+        padding:10px 15px 10px 15px;
+    }
+    
+
+    /* ============== ABOUT =========== */
+    #about h1{
+        font-weight: bold;
+        font-size: clamp(1vw, 2vw, 60pt);
+        
+    }
+    #about p{
+        font-size: clamp(5px, 1.1vw, 50px);  
+        margin-top:1%;
+        color:#d8c9b2;
+        font-weight: bold;
+    }
+    
+    /* ============== TEAM =========== */
+
+    .team-members{
+        margin:2% 0% 5% 0%;
+        display:inline-flexbox;
+        flex-wrap:wrap;
+        text-align:center;
+    }
+    #team h1{
+        font-weight: bold;
+        font-size: clamp(1vw, 2vw, 60pt);    
+    }
+    #team img{
+        border-radius:10px;
+    }
+    .team-members h5{
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 10% 0% 0% 0%;
+    }
+    .team-members p{
+        font-size: 0.9rem;
+        color:rgba(210, 210, 210, 0.8)
+    }
+
+    /* ============== FOOTER =========== */
+    footer{
+        padding: 3% 0% 3% 0%;
+    }
+    .footer-heading h1{
+        font-weight: bold;
+        font-size: 4.4vmax;
+    }
+    .footer-para p{
+        font-size:clamp(5px, 1.1vw, 50px);
+        padding: 5% 0% 0% 0%
+    }
+    .email-id address{
+        font-weight:bold;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1600px){
+    /* ============== GLOBAL =========== */
+    .row hr{
+        margin: 5% 0% 5% 0%;
+    }
+    .contact-us{
+        width:auto;
+    }
+
+    /* ============== WELCOME =========== */
+    #welcome-page .heading-1{
+        padding-top: 18vh;
+        padding-bottom:2%;
+        font-size: 4.5vmax;
+    }
+
+    .heading-2 *{
+        font-size: 1.2vmax;
+    }
+
+    .explore-btn{
+        margin-top: 12vh;
+    }
+
+    .explore-btn .btn{
+        margin: 5px;
+        padding: 11px;
+        width: 13vw;
+        border-radius: 40px;
+        background-size: 300%;       
+        font-size:1.9rem;
+    }
+    .arrow-down .fas{
+        transform: scale(1.6, 1);  
+    }
+    
+
+    /* ============== PRODUCTS =========== */
+    #products h1{
+        font-size: clamp(1vw, 2vw, 60pt);
+        font-weight: bold;
+    }
+    #products .lead{
+        font-size: clamp(5px, 1.1vw, 50px);
+        margin: 1% 0% 4% 0%;
+        color:#d8c9b2;
+        font-weight: bold;
+    }
+    #products sup{
+        font-size: clamp(5pt, 1vw, 50pt);
+
+    }
+    .learn-more .btn{
+        font-size: clamp(5px, 1.1vw, 50px);
+        padding:10px 15px 10px 15px;
+    }
+    
+
+    /* ============== ABOUT =========== */
+    #about h1{
+        font-weight: bold;
+        font-size: clamp(1vw, 2vw, 60pt);
+        
+    }
+    #about p{
+        font-size: clamp(5px, 1.1vw, 50px);  
+        margin-top:1%;
+        color:#d8c9b2;
+        font-weight: bold;
+    }
+    
+    /* ============== TEAM =========== */
+    #team{
+        padding: 3% auto 3% auto;
+    }
+    .team-members{
+        margin:2% 0% 5% 0%;
+        display:inline-flexbox;
+        flex-wrap:wrap;
+        text-align:center;
+    }
+    #team h1{
+        font-weight: bold;
+        font-size: clamp(1vw, 2vw, 60pt);    
+    }
+    #team img{
+        border-radius:10px;
+    }
+    .team-members h5{
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 10% 0% 0% 0%;
+    }
+    .team-members h6{
+        font-size: 1rem;
+        
+    }
+
+    /* ============== FOOTER =========== */
+    footer{
+        padding: 3% 0% 3% 0%;
+    }
+    .footer-heading h1{
+        font-weight: bold;
+        font-size: clamp(5px, 1.1vw, 50px);
+    }
+    .footer-para p{
+        font-size:clamp(5px, 1.1vw, 50px);
+        padding: 5% 0% 0% 0%
+    }
+    .email-id address{
+        font-weight:bold;
+        font-size: 1rem;
+    }
+    
+}
+
+@media screen and (max-width: 1440px){
+    /* ============== GLOBAL =========== */
+    .row hr{
+        margin: 5% 0% 5% 0%;
+    }
+    .contact-us{
+        width:auto;
+    }
+
+    /* ============== WELCOME =========== */
+    #welcome-page .heading-1{
+        padding-top: 20vh;
+        padding-bottom:2%;
+        font-size: 4.5vmax;
+        
+    }
+
+    .heading-2 *{
+        font-size: 1.4vmax;
+
+    }
+
+    .explore-btn{
+        margin-top: 8rem;
+         
+    }
+
+    .explore-btn .btn{
+        margin: 20px;
+        padding: 15px;
+        width: 220px;
+        border-radius: 40px;
+        background-size: 300%;       
+        font-size:1.9rem;
+    }
+    .arrow-down .fas{
+        font-size: 100px;
+        transform: scale(1.7, 1);
+        -webkit-text-stroke: 14px #08080B;
+    }
+    
+
+    /* ============== PRODUCTS =========== */
+    #products h1{
+        font-size: clamp(1vw, 2vw, 60pt);
+        font-weight: bold;
+    }
+    #products .lead{
+        font-size: clamp(5px, 1.1vw, 50px);
+        margin: 1% 0% 4% 0%;
+        color:#d8c9b2;
+        font-weight: bold;
+    }
+    #products sup{
+        font-size: clamp(5pt, 1vw, 50pt);
+
+    }
+    .learn-more .btn{
+        font-size: clamp(5px, 1.1vw, 50px);
+        padding:10px 15px 10px 15px;
+    }
+    
+
+    /* ============== ABOUT =========== */
+    #about h1{
+        font-weight: bold;
+        font-size: clamp(1vw, 2vw, 60pt);
+        
+    }
+    #about p{
+        font-size: clamp(5px, 1.1vw, 50px);  
+        margin-top:1%;
+        color:#d8c9b2;
+        font-weight: bold;
+    }
+    
+    /* ============== TEAM =========== */
+    #team{
+        padding: 3% auto 3% auto;
+    }
+    .team-members{
+        margin:2% 0% 5% 0%;
+        display:inline-flexbox;
+        flex-wrap:wrap;
+        text-align:center;
+    }
+    #team h1{
+        font-weight: bold;
+        font-size: clamp(1vw, 2vw, 60pt);    
+    }
+    #team img{
+        border-radius:10px;
+    }
+    .team-members h5{
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 10% 0% 0% 0%;
+    }
+    .team-members h6{
+        font-size: 1rem;
+        
+    }
+
+    /* ============== FOOTER =========== */
+    footer{
+        padding: 3% 0% 3% 0%;
+    }
+    .footer-heading h1{
+        font-weight: bold;
+        font-size: clamp(5px, 1.1vw, 50px);
+    }
+    .footer-para p{
+        font-size:clamp(5px, 1.1vw, 50px);
+        padding: 5% 0% 0% 0%
+    }
+    .email-id address{
+        font-weight:bold;
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 1280px){
+    .nav-link{
+        font-size: 0.9rem !important;
+    }
+
+    .contact-us{
+        width:auto;
+    }
+    /* WELCOME PAGE*/
+    #welcome-page{
+        height:100vh;
+    }
+    #welcome-page .heading-1{
+        font-stretch:extra-expanded;
+        padding-top:9rem;
+        padding-bottom:0.6rem;
+    }
+    
+    .heading-2 *{
+        font-size: 1.2rem;
+        padding: 0% 1rem 0% 1rem;
+    }
+    .explore-btn{
+        margin-top:6%;
+        padding-bottom: 0%;
+    }
+    .explore-btn .btn{
+        margin: 20px;
+        padding: 13px;
+        width: 170px;
+        border-radius: 30px;
+        background-size: 200%;
+        font-size: 1.8vw;
+    }
+    .arrow-down .fas{
+        font-size: 100px;
+        transform: scale(1.5, 1);
+        -webkit-text-stroke: 14px #08080B;
+
+    }
+
+}
+
+@media screen and (max-width: 992px){
+    .contact-us{
+        width:auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .contact-us{
+        width:125px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .navbar-toggler{
+        justify-content: end;
+    }
+
+    /* ============== GLOBAL =========== */
+    .row hr{
+        margin: 5% 0% 5% 0%;
+    }
+    .contact-us{
+        width:36%;
+    }
+
+    #welcome-page{
+        height:100vh;
+    }
+    #welcome-page .heading-1{
+        padding-top: 25vh;
+        padding-bottom:2%;
+        font-size: clamp(3vw, 3.6vh, 100pt);
+    }
+    #welcome-page .heading-2{
+        padding: 2% 10% 0% 10%;
+    }
+    #welcome-page .heading-2 *{
+        font-size: 0.7rem;
+        font-weight: bold;
+    }
+    
+    
+
+   
+
+
+}
