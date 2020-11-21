@@ -4,8 +4,11 @@
 /* ==============================================================
                         GLOBAL STYLE
 =================================================================*/
+*{
+    box-sizing: border-box;
+}
 
-html, body {
+body {
     background-color: #08080b;
     font-family: sans-serif;
     color:white;
@@ -27,11 +30,6 @@ nav{
     backdrop-filter: blur(30px);
 }
 
-.navbar-item{
-    padding-left:0.8rem;
-    padding-right:0.8rem;
-}
-
 .nav-link{
     font-family: sans-serif ;
     font-weight: bold;
@@ -40,8 +38,7 @@ nav{
 
 .contact-us{
     border: none;
-    border-radius:17px;
-    width:110px;
+    border-radius:40px;
     background-image: linear-gradient(to right, #F87149,#F02E5F);
 }
 
@@ -58,7 +55,7 @@ nav{
     font-weight:bold;    
 }
 
-#welcome-page .heading-2 *{
+.title-2 *{
     font-weight:bold;
 }
 
@@ -126,6 +123,11 @@ nav{
 #team h1{
     font-weight: bold;    
 }
+#team img{
+    border-radius:10px;
+    width:100%;
+    height:auto;
+}
 .team-members p{
     font-size: 0.9rem;
     color:rgba(210, 210, 210, 0.8)
@@ -180,22 +182,23 @@ address{
     }
     .contact-us{
         width:auto;
+        
     }
     .nav-link{
-        font-size: 0.9vw;
+        margin: auto 1rem;
+        font-size: 1rem !important;
+
     }
 
     /* ============== WELCOME =========== */
-    #welcome-page .heading-1{
-        padding-top: 20vh;
+    #welcome-page h1{
+        padding-top: 22vh;
         padding-bottom:2%;
-        font-size: 4.5vmax;
-        width:auto;
-        
+        font-size: 3.8vw;
     }
 
-    .heading-2 *{
-        font-size: 3vmin;
+    .title-2 *{
+        font-size: 1.4vw;
     }
 
     .explore-btn{
@@ -208,8 +211,9 @@ address{
         padding: 15px;
         width: 220px;
         border-radius: 40px;   
-        font-size:1.9rem;
+        font-size:2rem;
     }
+
     .arrow-down .fas{
         transform: scale(1.8, 1);
     }
@@ -302,27 +306,26 @@ address{
     }
 
     /* ============== WELCOME =========== */
-    #welcome-page .heading-1{
-        padding-top: 18vh;
+    #welcome-page h1{
+        padding-top: 20vh;
         padding-bottom:2%;
-        font-size: 4.5vmax;
+        font-size: 4.4vw;
+        font-stretch: extra-expanded;
+        
     }
 
     .heading-2 *{
-        font-size: 1.2vmax;
+        font-size: 1vw;
     }
 
     .explore-btn{
-        margin-top: 12vh;
+        margin-top: 13vh;
     }
 
     .explore-btn .btn{
-        margin: 5px;
-        padding: 11px;
-        width: 13vw;
         border-radius: 40px;
         background-size: 300%;       
-        font-size:1.9rem;
+        font-size:1.5rem;
     }
     .arrow-down .fas{
         transform: scale(1.6, 1);  
@@ -532,44 +535,79 @@ address{
 }
 
 @media screen and (max-width: 1280px){
+    
+     /* ============== GLOBAL =========== */
+     .row hr{
+        margin: 5% 0% 5% 0%;
+    }
     .nav-link{
+        margin: auto 1rem;
         font-size: 0.9rem !important;
     }
-
     .contact-us{
+        
         width:auto;
     }
+
     /* WELCOME PAGE*/
     #welcome-page{
         height:100vh;
     }
-    #welcome-page .heading-1{
+    #welcome-page .title-1{
+        font-size:5vw;
         font-stretch:extra-expanded;
-        padding-top:9rem;
-        padding-bottom:0.6rem;
+        padding-top:20vh;
     }
     
-    .heading-2 *{
-        font-size: 1.2rem;
-        padding: 0% 1rem 0% 1rem;
+    .title-2 *{
+        font-size: 3vmin;
+        padding: 0% 1rem;
     }
     .explore-btn{
-        margin-top:6%;
-        padding-bottom: 0%;
+        margin-top: 8vh;
+         
     }
+
     .explore-btn .btn{
-        margin: 20px;
-        padding: 13px;
-        width: 170px;
-        border-radius: 30px;
-        background-size: 200%;
-        font-size: 1.8vw;
+        width: 200px;
+        border-radius: 50px;   
+        font-size:1.5rem;
     }
     .arrow-down .fas{
-        font-size: 100px;
-        transform: scale(1.5, 1);
-        -webkit-text-stroke: 14px #08080B;
+        transform: scale(1.6, 1);
+    }
 
+    /* ============== PRODUCTS =========== */
+    #products h1{
+        font-size: 3vw;
+    }
+    #products .lead{
+        font-size: 1.5vw;
+        margin: 4% 0%;
+    }
+    #products sup{
+        font-size: 1vw;
+
+
+    }
+    .learn-more .btn{
+        font-size: 1.5vw;
+        padding:10px 15px 10px 15px;
+    }
+
+     /* ============== ABOUT =========== */
+     #about h1{
+        margin: 1vh 0;
+        font-size: 3vw;
+        
+    }
+    #about p{
+        font-size: 1.5vw;
+        margin-top:1%;
+    }
+
+    #team h1{
+        font-size: 3vw;
     }
 
 }
@@ -587,37 +625,141 @@ address{
 }
 
 @media screen and (max-width: 576px){
-    .navbar-toggler{
-        justify-content: end;
-    }
 
     /* ============== GLOBAL =========== */
     .row hr{
         margin: 5% 0% 5% 0%;
     }
-    .contact-us{
-        width:36%;
+
+    .navbar-toggler{
+        margin:1% 0 0 85%;
+        background: rgb(44, 44, 44);
     }
 
-    #welcome-page{
-        height:100vh;
+    .navbar-item{
+        padding-left: 3%;
     }
-    #welcome-page .heading-1{
+    .contact-us{
+        width:auto;
+        background-size: 100%;
+        border-radius: 30px;
+    }
+
+    /* ============== WELCOME =========== */
+    #welcome-page h1{
         padding-top: 25vh;
-        padding-bottom:2%;
-        font-size: clamp(3vw, 3.6vh, 100pt);
+        padding-bottom:1vh;
+        font-size:7vw;
+        
     }
-    #welcome-page .heading-2{
-        padding: 2% 10% 0% 10%;
+    .title-2 *{
+        font-size: 3.5vw;
+        display: block;
+        padding: 0 2.3em;        
     }
-    #welcome-page .heading-2 *{
-        font-size: 0.7rem;
+    .explore-btn{
+        margin-top: 10vh;
+        
+    }
+    .explore-btn .btn{
+        width: 150px;
+        border-radius: 30px;   
+        font-size: 1rem;
+    }
+    .arrow-down .fas{
+        transform: scale(1.5, 0.8);
+    }
+
+    /* ============== PRODUCTS =========== */
+    #products{
+        margin-top:5vh;
+    }
+
+    #products h1{
+        font-size: 4.3vw;
+        font-weight: bold;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;        
+    }
+    #products sup{
+        font-size: 0.6em;
+        padding-top:0.4vh;
+
+    }
+    #products .lead{
+        font-size: 3vw;
+        margin: 1% 0% 4% 0%;
+        color:#d8c9b2;
         font-weight: bold;
     }
     
-    
+    .learn-more .btn{
+        font-size: 3vw;
+        padding:10px 15px 10px 15px;
+        margin: 1vh 0%;
+    }
 
-   
+    /* ============== ABOUT =========== */
+    #about h1{
+        margin: 1vh 0;
+        font-weight: bold;
+        font-size: 4.3vw;
+        text-align:center;
+        
+    }
+    #about p{
+        font-size: 3vw;
+        margin-top:1%;
+        color:#d8c9b2;
+        font-weight: bold;
+    }
+
+    /* ============== TEAM =========== */
+
+    .team{
+        margin: 1vh 0;
+    }
+    #team h1{
+        font-weight: bold;
+        font-size: 4.3vw;
+        text-align:center;
+        margin: 0.2vh 0;
+    }
+    
+    .team-members h5{
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 5% 0 0 0 ;
+        
+    }
+    .team-members p{
+        font-size: 0.9rem;
+        color:rgba(210, 210, 210, 0.8)
+    }
+
+    /* ============== FOOTER =========== */
+    footer .container{
+        margin:2vh auto;
+        
+    }
+    .section-1 h1{
+        font-weight: bold;
+        font-size:20px;
+    }
+    .footer-para p{
+        font-size: 3vw;
+        padding: 5% 0% 0% 0%
+    }
+    .email-id address{
+        font-weight:bold;
+        font-size: 1rem;
+    }   
+
+    .section-2{
+        margin: 1vh 0;
+    }
 
 
 }
