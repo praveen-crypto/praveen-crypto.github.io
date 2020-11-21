@@ -1,0 +1,205 @@
+/* IMPORT REQUIRED FONT FAMILY */
+
+
+/* PAGE STYLE START */
+body {
+    background-color: #08080B;
+    font-family: sans-serif;
+    color:white;
+    height:100%
+}
+
+/* NAVIGATION STYLE */
+button span{
+    background-color:white;
+    color:white;
+}
+
+nav{
+    border-bottom: solid 3px #202020;
+}
+
+.navbar-item{
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.nav-link{
+    font-family: sans-serif ;
+    font-weight: bold;
+    font-size:12pt;
+}
+
+.contact-us{
+    border: none;
+    border-radius:17px;
+    width:110px;
+    background-image: linear-gradient(to right, #F87149,#F02E5F);
+}
+
+/* Welcome Page START*/
+
+.welcome-page{
+    padding-top:16%;
+}
+
+.welcome-text-1 h1{
+    letter-spacing: 0px;
+    font-weight:bold;
+    font-size: 5vw;
+    padding-bottom:10px;
+}
+
+.welcome-text-2 h5{
+    font-weight:bold;
+    font-size:1.5vw;
+}
+
+.welcome-text-2 mark{
+    background: -webkit-linear-gradient(#F87149, #F02E5F);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight:bold;
+    font-size: 1.5vw;
+}
+
+.explore-btn{
+    padding-top:10%;
+}
+
+.explore-btn .btn{
+    border: none;
+    margin: 20px;
+    padding: 15px;
+    width: 220px;
+    border-radius: 30px;
+    color: #E5E0D9;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #F87149, #F02E5F);
+    background-size: 200%;
+    transition: 0.6s;
+    font-weight:bold;
+    font-size:17pt;
+}
+
+.arrow-down .fas{
+    padding-top:10px;
+    font-size: 95px;
+    transform: scale(1.5, 1) ;
+    -webkit-text-stroke: 14px #08080B;
+    padding-bottom:100px;
+}
+
+/* Welcome Page END*/
+
+
+
+
+.padding{
+    background-color: blue;
+}
+.welcome-text-1{
+    background-color: brown;
+}
+.products{
+    background-color: #F02E5F;
+}
+
+.product-head{
+    background-color: aqua;
+}
+
+/* PRODUCTS */
+.products h2{
+    font-size: 3vw;
+    padding-right: 0px;
+}
+
+/* PRODUCTS END*/
+
+
+
+/* wholl use this start*/
+
+.wholl-use-this{
+    background-color: black;
+}
+
+.image-span-1{
+    background-image: url("../Resources/man.svg");
+}
+.image-span-2{
+    background-image: url("../Resources/fracture.svg");
+}
+.image-span-3{
+    background-image: url("../Resources/hand-ailments.svg");
+    align-content: center;
+}
+.image-span-4{
+    background-image: url("../Resources/video-controller.svg");
+}
+.image-span-5{
+    background-image: url("../Resources/multitasker.svg");
+}
+.image-span-6{
+    background-image: url("../Resources/presentetr.svg");
+}
+
+.image-span-1:hover{
+    background-image: url("../Resources/man-hover.svg");
+}
+.image-span-2:hover{
+    background-image: url("../Resources/fracture-hover.svg");
+}
+.image-span-3:hover{
+    background-image: url("../Resources/hand-ailments-hover.svg");
+}
+.image-span-4:hover{
+    background-image: url("../Resources/video-controller-hover.svg");
+}
+.image-span-5:hover{
+    background-image: url("../Resources/multitasker-hover.svg");
+}
+.image-span-6:hover{
+    background-image: url("../Resources/presentr-hover.svg");
+}
+
+.wholl-use-this p{
+    font-size: 0.9rem;
+    background-color: hotpink;
+}
+
+
+/* wholl use this end*/
+
+
+
+
+
+
+
+
+
+
+/* Media Queries*/
+@media screen and (max-width: 1710px){
+    .contact-us{
+        width:auto;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .contact-us{
+        width:auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .contact-us{
+        width:110px;
+    }
+}
+ 
+@media screen and (max-width: 576px){
+
+}

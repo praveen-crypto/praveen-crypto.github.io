@@ -1,4 +1,11 @@
-/* IMPORT REQUIRED FONT FAMILY */
+/* ==============================================================
+                        IMPORT FONTS
+=================================================================*/
+
+
+
+
+
 
 
 /* ==============================================================
@@ -21,6 +28,16 @@ body {
     background: #202020;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: -webkit-linear-gradient(#F87149, #F02E5F);
+    border-radius: 10px;
+}
+
+
 /* ==============================================================
                         NAVIGATION
 =================================================================*/
@@ -39,6 +56,11 @@ nav{
 .contact-us{
     border: none;
     border-radius:40px;
+    background: #F87149;
+    
+}
+.contact-us:hover,
+.contact-us:focus{
     background-image: linear-gradient(to right, #F87149,#F02E5F);
 }
 
@@ -187,7 +209,6 @@ address{
     .nav-link{
         margin: auto 1rem;
         font-size: 1rem !important;
-
     }
 
     /* ============== WELCOME =========== */
@@ -209,7 +230,7 @@ address{
     .explore-btn .btn{
         margin: 20px;
         padding: 15px;
-        width: 220px;
+        width: 230px;
         border-radius: 40px;   
         font-size:2rem;
     }
@@ -304,6 +325,11 @@ address{
     .contact-us{
         width:auto;
     }
+    .nav-link{
+        margin: auto 1rem;
+        font-size: 1rem !important;
+    }
+
 
     /* ============== WELCOME =========== */
     #welcome-page h1{
@@ -420,37 +446,36 @@ address{
     .contact-us{
         width:auto;
     }
+    .nav-link{
+        margin: auto 1rem;
+        font-size: 1rem !important;
+    }
+
 
     /* ============== WELCOME =========== */
-    #welcome-page .heading-1{
+    #welcome-page h1{
         padding-top: 20vh;
         padding-bottom:2%;
-        font-size: 4.5vmax;
+        font-size: 8vh;
         
     }
-
-    .heading-2 *{
-        font-size: 1.4vmax;
+    .title-2 *{
+        font-size: 2.5vh;
 
     }
-
     .explore-btn{
-        margin-top: 8rem;
-         
+        margin-top: 14vh;
     }
 
     .explore-btn .btn{
-        margin: 20px;
-        padding: 15px;
-        width: 220px;
+        
         border-radius: 40px;
         background-size: 300%;       
-        font-size:1.9rem;
+        font-size:1.5rem;
     }
+
     .arrow-down .fas{
-        font-size: 100px;
-        transform: scale(1.7, 1);
-        -webkit-text-stroke: 14px #08080B;
+        transform: scale(1.5, 1);
     }
     
 
@@ -460,7 +485,7 @@ address{
         font-weight: bold;
     }
     #products .lead{
-        font-size: clamp(5px, 1.1vw, 50px);
+        font-size: clamp(5px, 1.3vw, 50px);
         margin: 1% 0% 4% 0%;
         color:#d8c9b2;
         font-weight: bold;
@@ -482,7 +507,7 @@ address{
         
     }
     #about p{
-        font-size: clamp(5px, 1.1vw, 50px);  
+        font-size: clamp(5px, 1.3vw, 50px);  
         margin-top:1%;
         color:#d8c9b2;
         font-weight: bold;
@@ -545,7 +570,6 @@ address{
         font-size: 0.9rem !important;
     }
     .contact-us{
-        
         width:auto;
     }
 
@@ -554,23 +578,22 @@ address{
         height:100vh;
     }
     #welcome-page .title-1{
-        font-size:5vw;
-        font-stretch:extra-expanded;
         padding-top:20vh;
+        font-size:4.5vw;
+        font-stretch:extra-expanded;
     }
     
     .title-2 *{
-        font-size: 3vmin;
+        font-size: 1.5vw;
         padding: 0% 1rem;
     }
     .explore-btn{
-        margin-top: 8vh;
-         
+        margin-top: 10vh;
     }
 
     .explore-btn .btn{
-        width: 200px;
-        border-radius: 50px;   
+        margin: 10px;
+        border-radius: 50px;
         font-size:1.5rem;
     }
     .arrow-down .fas{
