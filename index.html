@@ -15,7 +15,7 @@
         <!-- NAVIGATION START -->
         <nav class="navbar navbar-expand-md navbar-dark fixed-top">
             <div class="container">
-               <a class="navbar-brand " href="#"> <img src="assets/Resources/logo_dark.png" alt="DEXTROWARE" height="30px"> </a> 
+               <a class="navbar-brand " href="index.html"> <img class="logo" src="assets/Resources/logo_dark.png" alt="DEXTROWARE" > </a> 
                 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarRes">
                     <span class="navbar-toggler-icon "></span>
@@ -27,19 +27,101 @@
                             <a class="nav-link " href="#"> Home </a> 
                         </li>
                         <li class="navbar-item">
-                            <a class="nav-link" href="#"> Products </a>  
+                            <a class="nav-link" href="#products"> Products </a>  
                         </li>
                         <li class="navbar-item">
-                            <a class="nav-link" href="#"> About </a>  
+                            <a class="nav-link" href="#about"> About </a>  
                         </li>
                         <li class="navbar-item contact-us">
-                            <a class="nav-link " href="#"> Contact Us </a> 
+                            <a   class="nav-link" data-toggle="modal" data-target="#myModal"> Contact Us </a>
                         </li>
                     </ol>
                 </div>
             </div>
         </nav>
         <!-- NAVIGATION END -->
+
+        <!-- CONTACT US Modal -->
+        <div class="modal fade" id="myModal">
+
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header ">
+                      <img class="modal-logo" src="assets/Resources/logo_dark.png" alt="" >
+                      <button type="button" class="close" data-dismiss="modal"> <i class="fa fa-times " aria-hidden="true"></i> </button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="container">
+                           
+                            <div class="row">
+                                
+                                <div class="col form">
+                                    
+                                    <!-- Header -->
+                                    <div class="form-header">
+                                        <h3> Let's get in touch.</h3>
+                                    </div>
+                                    <!-- Body -->
+                                    <div class="md-form">
+                                        <i class="fas fa-user  "></i>
+                                        <input type="text" id="form-name"  placeholder="Name" >
+                                    </div>
+                                    <div class="md-form">
+                                        <i class="fas fa-envelope "></i>
+                                        <input type="text" id="form-email"  placeholder="E-mail">
+                                    </div>
+                                    <div class="md-form">
+                                        <i class="fas fa-mobile  "></i>
+                                        <input type="text" id="form-Subject"  placeholder="Phone">
+                                    </div>
+                                    <div class="md-form">
+                                        <i class="fas fa-tag  "></i>
+                                        <input type="text" id="form-Role"  placeholder="Role">
+                                    </div>
+                                    <div class="md-form text-area">
+                                       <i class="fas fa-pencil-alt  "></i>
+                                       <textarea id="form-text"  rows="3" placeholder="I would like to use for..."></textarea>
+                                    </div>
+                                    <div class="modal-btn">
+                                        <button class="btn">Send</button>
+                                    </div>                                                    
+                                </div>
+                                
+                                <div class="col map">
+                                    <!--Google map-->
+                                    <div id="map-container-section" class="z-depth-1-half map-container-section" >
+                                        <iframe src="https://maps.google.com/maps?q=IIT%20Madras%20research%20center&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                                        style="border:0" allowfullscreen></iframe>
+                                    </div>
+
+                                    <!-- Buttons-->
+                                    <div class="row text-center">
+                                        <div class="col-md-4">
+                                            <a class="btn-floating ">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a class="btn-floating ">
+                                              <i class="fas fa-phone"></i>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a class="btn-floating ">
+                                              <i class="fas fa-envelope"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                             
+                </div>
+            </div>
+        </div>
 
         <div class= "container-bg ">
             
@@ -50,14 +132,14 @@
                         <h1 > We Provide Technology, <br>  to access Technology.</h1>
                     </div>
 
-                    <div class="col-xl"></div>
-                    <div class="col-xs-12  col-xl-8">
-                        <div class="title-2 ">
+                    
+                    <div class="col-12">
+                        <div class="title-2">
                             <h5> We, at Dextroware, believe that Assistive technology is any device or
                                 system that <mark>helps people work around their challenges</mark></h5>
                         </div>
                     </div>
-                    <div class="col-xl"></div>                    
+                                       
                 </div>
                 
                 <div class="row text-center">
@@ -65,9 +147,15 @@
                         <a href="#products"><span class="btn"> Explore </span> </a>
                     </div>
                     
-                    <div class="col-xs-12 col-xl-12 arrow-down">
-                        <i class="fas fa-chevron-down ">  </i>
+                    <div class="col-xs-12 col-12 ">
+                        <section id="arrow" class="down-arrow">
+                            <a href="#products">
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </section>
                     </div>
+
                 </div>
                 
             </div>
@@ -104,6 +192,7 @@
             <!-- PRODUCTS SECTION END -->
 
             <!-- ABOUT SECTION START -->
+           
             <div class="container " id="about">
                 <div class="row">
                     <div class="col-12">
@@ -147,10 +236,12 @@
 
                     <div class="col-xs-12 col-sm-4 col-md-4 col-xl-2 ">
                         <div class="team-img1">
-                            <img src="./assets/Resources/Team1.png" alt="logo" class="team-image">
-                            <div class="middle">
-                                <a href=""><i class="fab fa-linkedin text">  </i></a>
-                            </div>
+                            <a href="">
+                                <img src="./assets/Resources/Team1.png" alt="logo" class="team-image">
+                                <div class="middle">
+                                    <i class="fab fa-linkedin text">  </i>
+                                </div>
+                            </a>
                             <h5> Pravin Kumar </h5> 
                             <p> Co-Founder and CEO</p>
                         </div>
@@ -158,10 +249,12 @@
 
                     <div class="col-xs-12 col-sm-4 col-md-4 col-xl-2 ">
                         <div class="team-img1">
-                            <img src="./assets/Resources/Team2.png" alt="logo" class="team-image">
-                            <div class="middle">
-                                <a href=""><i class="fab fa-linkedin text">  </i></a>
-                            </div>
+                            <a href="">
+                                <img src="./assets/Resources/Team2.png" alt="logo" class="team-image">
+                                <div class="middle">
+                                    <i class="fab fa-linkedin text">  </i>
+                                </div>
+                            </a>
                             <h5> Rahul </h5> 
                             <p> CTO</p>
                         </div>
@@ -169,10 +262,12 @@
 
                     <div class="col-sm-4 col-md-4 col-xl-2 ">
                         <div class="team-img1">
-                            <img src="./assets/Resources/Team3.png" alt="logo" class="team-image">
-                            <div class="middle">
-                                <a href=""><i class="fab fa-linkedin text">  </i></a>
-                            </div>
+                            <a href="">
+                                <img src="./assets/Resources/Team3.png" alt="logo" class="team-image">
+                                <div class="middle">
+                                    <a href=""><i class="fab fa-linkedin text">  </i></a>
+                                </div>
+                            </a>
                             <h5> Gayathri </h5> 
                             <p> Co-Founder</p>
                         </div>
