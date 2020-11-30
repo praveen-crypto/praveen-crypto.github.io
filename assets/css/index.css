@@ -64,7 +64,7 @@ nav{
 .nav-link{
     font-family: sans-serif ;
     font-weight: bold;
-    font-size:0.9vw;
+    
 }
 
 .contact-us{
@@ -230,11 +230,8 @@ textarea:focus{
     transition: 0.3s;
 }
 .explore-btn .btn:hover{
-    
     background-size: 100%;
-    
     transition: 0.3s;
-
 }
 
 #arrow a {
@@ -578,7 +575,7 @@ address{
     }
     .nav-link{
         margin: auto 1.1rem;
-        font-size: 1.1rem !important;
+        font-size: 1rem !important;
     }
 
 
@@ -609,9 +606,7 @@ address{
         background-size: 300%;       
         font-size:1.5rem;
     }
-    .arrow-down .fas{
-        transform: scale(1.6, 1);  
-    }
+ 
     
 
     /* ============== PRODUCTS =========== */
@@ -732,10 +727,6 @@ address{
         font-size:1.5rem;
     }
 
-    .arrow-down .fas{
-        transform: scale(1.5, 1);
-    }
-    
 
     /* ============== PRODUCTS =========== */
     #products h1{
@@ -825,7 +816,7 @@ address{
     }
     .nav-link{
         margin: auto 1rem;
-        font-size: 0.9rem !important;
+        font-size: 1rem !important;
     }
     .contact-us{
         width:auto;
@@ -856,9 +847,6 @@ address{
         margin: 10px;
         border-radius: 50px;
         font-size:1.5rem;
-    }
-    .arrow-down .fas{
-        transform: scale(1.6, 1);
     }
 
     /* ============== PRODUCTS =========== */
@@ -911,16 +899,24 @@ address{
 @media screen and (max-width: 576px){
 
     /* ============== GLOBAL =========== */
+    
     .row hr{
         margin: 5% 0% 5% 0%;
     }
 
+    /* ============== NAVBAR =========== */
+
+    .logo{
+        height: 40px;
+        width: 85px;
+    }
+
     .navbar-toggler{
-        background: rgb(44, 44, 44);
+        background: rgb(36, 36, 36);
     }
 
     .navbar-item{
-        padding-left: 3%;
+        padding-left: 2%;
     }
     .contact-us{
         width:auto;
@@ -928,30 +924,134 @@ address{
         border-radius: 30px;
     }
 
+    
+    /* ==========    MODAL  =============*/
+    .modal{
+        background-color: rgba(8, 8, 11, 0.6);
+        backdrop-filter: blur(40px);
+       
+    }
+    .modal-dialog *{
+        background-color: var(--color_1);
+    }
+    .modal-dialog{
+        margin: 0px 40px;
+    }
+    .modal-content{
+        box-shadow: 3px 3px 6px rgb(50, 50, 50, 0.8), -3px -3px 6px rgb(50, 50, 50, 0.8);
+    }
+    .modal-header{
+        border-bottom:none;
+    }
+    .modal-logo{
+        height:25px;
+        width:70px;
+    }
+    .modal-body{
+        padding: 0;
+    }
+    .fa-times{
+        color:#fff;
+    }
+    .form { 
+        padding:0;
+        margin: 3vw 0;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        text-align:center ;
+    }
+    .form-header{
+        margin-bottom:0;
+    }
+    .form-header h3{
+        font-size: 5vw;
+        margin-bottom: 0;
+    }
+    .md-form{
+        margin: 5% 0;
+    }
+    .md-form i{
+        padding:3px;
+        color: var(--color_4);
+    }
+
+    input[type=text]{
+        border-bottom: auto;
+        cursor:auto;
+        width:70%;
+    }
+    input[type=text]:focus {   
+        border-bottom: 2px solid var(--color_4);
+    }
+
+    .text-area{
+        display: flex;
+        justify-content: center;       
+    }
+    textarea{
+        width:70%;
+        color: #E5E0D9; 
+    }
+    textarea:focus{
+        outline:0;
+        caret-color: #E5E0D9;
+        border: 2px solid var(--color_4);   
+    }
+    .modal-btn{
+        width:auto;
+        text-align: center;
+    }
+    .modal-btn .btn{
+        width:30%;
+        background-color:rgba(240, 46, 95, 0.8);
+        border: none;
+        color: #E5E0D9;
+        border-radius: 0;
+        transition: 0.3s;
+    }
+    .modal-btn .btn:hover{
+        width:45%;
+    }
+    .map{
+        display:none;
+    }
+
+
     /* ============== WELCOME =========== */
     #welcome-page h1{
-        padding-top: 25vh;
-        padding-bottom:1vh;
+        padding-top: 27vh;
+        padding-bottom:1.8vh;
         font-size:7vw;
         
     }
+    .title-2{
+        margin: auto 3vw;
+    }
     .title-2 *{
-        font-size: 3.5vw;
-        display: block;
-        padding: 0 2.3em;        
+        font-size: 3.5vw;   
     }
     .explore-btn{
         margin-top: 10vh;
         
     }
     .explore-btn .btn{
-        width: 150px;
+        width: 38%;
         border-radius: 30px;   
         font-size: 1rem;
     }
-    .arrow-down .fas{
-        transform: scale(1.5, 0.8);
+    #arrow a {
+        padding-top: 80px;
     }
+    #arrow a span {
+        position: absolute;
+        top: 35px;
+        left: 48%;
+        width: 40px;
+        height: 40px;
+        margin-left: -12px;   
+    }
+    
 
     /* ============== PRODUCTS =========== */
     #products{
@@ -1000,7 +1100,6 @@ address{
     }
 
     /* ============== TEAM =========== */
-
     .team{
         margin: 1vh 0;
     }
