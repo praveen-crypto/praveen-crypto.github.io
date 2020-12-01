@@ -206,14 +206,12 @@ textarea:focus{
 }
 
 #welcome-page h1{
-    font-family: 'Acme';
-    font-stretch: extra-expanded;
+    font-size:12px;
     font-weight:bold;  
-    word-spacing: 9px;  
+    font-stretch:extra-expanded;
 }
 
 .title-2 *{
-    font-family: 'Acme';
     font-weight:bold;
 }
 
@@ -465,6 +463,9 @@ textarea:focus{
 .timeline-title h1{
   font-weight: bold;
 }
+.importo{
+    color:white;
+}
 /*Animation ends*/
 .anim,.anima {
     opacity: 0;
@@ -539,6 +540,10 @@ textarea:focus{
 
 
 /**************Who View Your Profile CSS Start Here****************/
+.timeline-badge img{
+    height:120px;
+}
+
 #timeline {
   list-style: none;
   position: relative;
@@ -709,6 +714,9 @@ textarea:focus{
   max-width: 1300px;
   height: 590px;
 }
+#award-carousel{
+    margin-bottom: 5%;
+}
 
 
 
@@ -753,86 +761,30 @@ address{
 =================================================================*/
 
 @media screen and (max-width: 1920px){
-
-  /* ============== GLOBAL =========== */
-  .row hr{
-      margin: 5% 0% 5% 0%;
-  }
-  .contact-us{
-      width:auto;
-      
-  }
-  .nav-link{
-      margin: auto 1rem;
-      font-size: 1rem !important;
-  }
-
-  /* ============== WELCOME =========== */
-  #welcome-page h1{
-      padding-top: 22vh;
-      padding-bottom:2%;
-      
-  }
-
-  .title-2 *{
-      font-size: 1.4vw;
-  }
-
-  .explore-btn{
-      margin-top: 12vh;
-       
-  }
-
-  .explore-btn .btn{
-      margin: 20px;
-      padding: 15px;
-      width: 230px;
-      border-radius: 40px;   
-      font-size:2rem;
-  }
-  
-
-  /* ============== FOOTER =========== */
-  footer{
-      padding: 3% 0% 3% 0%;
-  }
-  .footer-heading h1{
-      font-weight: bold;
-      font-size: 4.4vmax;
-  }
-  .footer-para p{
-      font-size:clamp(5px, 1.1vw, 50px);
-      padding: 5% 0% 0% 0%
-  }
-  .email-id address{
-      font-weight:bold;
-      font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 1600px){
-  /* ============== GLOBAL =========== */
-  .row hr{
-      margin: 5% 0% 5% 0%;
-  }
-  .contact-us{
-      width:auto;
-  }
-  .nav-link{
-      margin: auto 1rem;
-      font-size: 1rem !important;
-  }
-
-
-  /* ============== WELCOME =========== */
-  #welcome-page h1{
-      padding-top: 20vh;
-      padding-bottom:2%;
-      font-size: 6.5vw;     
+    /* ============== GLOBAL =========== */
+    .row hr{
+        margin: 5% 0% 5% 0%;
+    }
+    .contact-us{
+        width:auto;
+    }
+    .nav-link{
+        margin: auto 1rem;
+        font-size: 1rem !important;
     }
 
-    .heading-2 *{
-        font-size: 1vw;
+
+  /* ============== WELCOME =========== */
+    #welcome-page h1{
+      padding-top: 20vh;
+      padding-bottom:2%;
+      font-size: 4.5vw;     
+    }
+    .title-2{
+        margin: auto 10%;
+    }
+    .title-2 *{
+        font-size: 1.4vw;
     }
 
     .explore-btn{
@@ -840,84 +792,140 @@ address{
     }
 
     .explore-btn .btn{
+        font-size:1.8vw;
+        width: 23%;
+        padding: 15px;
         border-radius: 40px;
         background-size: 300%;       
     }
+    #arrow a span {
+        position: absolute;
+        top: 35px;
+        left: 48.4%;
+        width: 60px;
+        height: 60px;
+        margin-left: -12px;
+    }
 
-  /* ============== FOOTER =========== */
-  footer{
-      padding: 3% 0% 3% 0%;
-  }
-  .footer-heading h1{
-      font-weight: bold;
-      font-size: clamp(5px, 1.1vw, 50px);
-  }
-  .footer-para p{
-      font-size:clamp(5px, 1.1vw, 50px);
-      padding: 5% 0% 0% 0%
-  }
-  .email-id address{
-      font-weight:bold;
-      font-size: 1rem;
-  }
+    /*============== CAROUSEL =========== */ 
+    .carousel-inner img{
+        max-width: 100%;
+        height: auto;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 1600px){
+  /* ============== GLOBAL =========== */
+    .row hr{
+        margin: 5% 0% 5% 0%;
+    }
+    .contact-us{
+        width:auto;
+    }
+    .nav-link{
+        margin: auto 1rem;
+        font-size: 1rem !important;
+    }
+
+
+  /* ============== WELCOME =========== */
+    #welcome-page h1{
+      padding-top: 20vh;
+      padding-bottom:2%;
+      font-size: 4.5vw;     
+    }
+    .title-2{
+        margin: auto 20%;
+    }
+    .title-2 *{
+        font-size: 1.4vw;
+    }
+
+    .explore-btn{
+        margin-top: 10vh;
+    }
+
+    .explore-btn .btn{
+        font-size:1.5vw;
+        width: 18%;
+        border-radius: 40px;
+        background-size: 300%;       
+    }
+    #arrow a span {
+        position: absolute;
+        top: 35px;
+        left: 48%;
+        width: 60px;
+        height: 60px;
+        margin-left: -12px;
+    }
+
+    /*============== CAROUSEL =========== */ 
+    .carousel-inner img{
+        max-width: 100%;
+        height: auto;
+    }
+
+
   
 }
 
 @media screen and (max-width: 1440px){
   /* ============== GLOBAL =========== */
-  .row hr{
-      margin: 5% 0% 5% 0%;
-  }
-  .contact-us{
-      width:auto;
-  }
-  .nav-link{
-      margin: auto 1rem;
-      font-size: 1rem !important;
-  }
+    .row hr{
+        margin: 5% 0% 5% 0%;
+    }
+    .contact-us{
+        width:auto;
+    }
+    .nav-link{
+        margin: auto 1rem;
+        font-size: 1rem !important;
+    }
 
 
   /* ============== WELCOME =========== */
-  #welcome-page h1{
-      padding-top: 20vh;
-      padding-bottom:2%;
-      font-size: 8vh;
-      
-  }
-  .title-2 *{
-      font-size: 2.5vh;
+    #welcome-page h1{
+        padding-top: 20vh;
+        padding-bottom:2%;
+        font-size: 8vh;
+    }
+    .title-2{
+        margin: auto 20%;
+    }
+    .title-2 *{
+        font-size: 1.5vw;
+    }
+    .explore-btn{
+        margin-top: 10vh;
+    }
+    .explore-btn .btn{
+        width:17%;
+        border-radius: 40px;    
+        font-size:1.5vw;
+    }
+    #arrow a span {
+        position: absolute;
+        top: 35px;
+        left: 48%;
+        width: 60px;
+        height: 60px;
+        margin-left: -12px;
+    }
 
-  }
-  .explore-btn{
-      margin-top: 14vh;
-  }
-
-  .explore-btn .btn{
-      
-      border-radius: 40px;
-      background-size: 300%;       
-      font-size:1.5rem;
-  }
+    /*============== CAROUSEL =========== */ 
+    .carousel-inner img{
+        max-width: 100%;
+        height: auto;
+    }
   
 
 
 
-  /* ============== FOOTER =========== */
-  footer{
-      padding: 3% 0% 3% 0%;
-  }
-  .footer-heading h1{
-      font-weight: bold;
-      font-size: clamp(5px, 1.1vw, 50px);
-  }
-  .footer-para p{
-      font-size:clamp(5px, 1.1vw, 50px);
-      padding: 5% 0% 0% 0%
-  }
-  .email-id address{
-      font-weight:bold;
-      font-size: 1rem;
-  }
 
 }
 
@@ -926,6 +934,10 @@ address{
    /* ============== GLOBAL =========== */
    .row hr{
        margin: 5% 0% 5% 0%;
+    }
+    .logo{
+        height: 50px;
+        width: 100px;
     }
     .nav-link{
         margin: auto 1rem;
@@ -939,26 +951,25 @@ address{
     #welcome-page{
         height:100vh;
     }
-    .title-1 h1{
-        padding-top:25vh;
-        font-size:8vw;
-        font-stretch:extra-expanded;
+    #welcome-page h1{
+        font-stretch: extra-expanded;
+        padding-top:20vh;
+        font-size:5vw;
     }
     .title-2{
-        margin: auto 20%;
+        margin: auto 23%;
     }
-  
     .title-2 *{
         font-size: 1.5vw;
     }
     .explore-btn{
-        margin-top: 10vh;
+        margin-top: 8vh;
     }
-
     .explore-btn .btn{
         margin: 10px;
         border-radius: 50px;
-        font-size:1.5rem;
+        font-size:1.5vw;
+        width: 15%;
     }
     
     #arrow a {
@@ -968,25 +979,22 @@ address{
     #arrow a span {
         position: absolute;
         top: 35px;
-        left: 48.5%;
+        left: 43vw;
         width: 60px;
         height: 60px;
         margin-left: -12px;
-        border-left: 1px solid #fff;
-        border-bottom: 1px solid #fff;
-        -webkit-transform: rotate(-45deg);
-        transform: rotate(-45deg);
-        -webkit-animation: sdb07 2s infinite;
-        animation: sdb07 2s infinite;
-        opacity: 0;
-        box-sizing: border-box;
-
     }
 
-  /*============== TIMELINE =========== */ 
+    /*============== TIMELINE =========== */ 
     .timeline-badge img{
       height:120px;
   }
+    /*============== CAROUSEL =========== */ 
+    .carousel-inner img{
+        max-width: 100%;
+        height: auto;
+    }
+
   
 
 }
@@ -1006,50 +1014,152 @@ address{
 @media screen and (max-width: 576px){
 
   /* ============== GLOBAL =========== */
-  .row hr{
-      margin: 5% 0% 5% 0%;
-  }
+    .row hr{
+        margin: 5% 0% 5% 0%;
+    }
+    .logo{
+        height: 40px;
+        width: 85px;
+    }
+    .navbar-toggler{
+        background: rgb(36, 36, 36);
+    }
+    .navbar-item{
+        padding-left: 2%;
+    }
+    .contact-us{
+        width:auto;
+        border-radius: 30px;
+    }
+     /* ==========    MODAL  =============*/
+     .modal{
+        background-color: rgba(8, 8, 11, 0.6);
+        backdrop-filter: blur(40px);
+       
+    }
+    .modal-dialog *{
+        background-color: var(--color_1);
+    }
+    .modal-dialog{
+        margin: 0px 40px;
+    }
+    .modal-content{
+        box-shadow: 3px 3px 6px rgb(50, 50, 50, 0.8), -3px -3px 6px rgb(50, 50, 50, 0.8);
+    }
+    .modal-header{
+        border-bottom:none;
+    }
+    .modal-logo{
+        height:25px;
+        width:70px;
+    }
+    .modal-body{
+        padding: 0;
+    }
+    .fa-times{
+        color:#fff;
+    }
+    .form { 
+        padding:0;
+        margin: 3vw 0;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        text-align:center ;
+    }
+    .form-header{
+        margin-bottom:0;
+    }
+    .form-header h3{
+        font-size: 5vw;
+        margin-bottom: 0;
+    }
+    .md-form{
+        margin: 5% 0;
+    }
+    .md-form i{
+        padding:3px;
+        color: var(--color_4);
+    }
 
-  .navbar-toggler{
-      background: rgb(44, 44, 44);
-  }
+    input[type=text]{
+        border-bottom: auto;
+        cursor:auto;
+        width:70%;
+    }
+    input[type=text]:focus {   
+        border-bottom: 2px solid var(--color_4);
+    }
 
-  .navbar-item{
-      padding-left: 3%;
-  }
-  .contact-us{
-      width:auto;
-      background-size: 100%;
-      border-radius: 30px;
-  }
+    .text-area{
+        display: flex;
+        justify-content: center;       
+    }
+    textarea{
+        width:70%;
+        color: #E5E0D9; 
+    }
+    textarea:focus{
+        outline:0;
+        caret-color: #E5E0D9;
+        border: 2px solid var(--color_4);   
+    }
+    .modal-btn{
+        width:auto;
+        text-align: center;
+    }
+    .modal-btn .btn{
+        width:30%;
+        background-color:rgba(240, 46, 95, 0.8);
+        border: none;
+        color: #E5E0D9;
+        border-radius: 0;
+        transition: 0.3s;
+    }
+    .modal-btn .btn:hover{
+        width:45%;
+    }
+    .map{
+        display:none;
+    }
 
-  /* ============== WELCOME =========== */
-  #welcome-page h1{
-      padding-top: 25vh;
-      padding-bottom:1vh;
-      font-size:7vw;
-      
-  }
-  .title-2 *{
-      font-size: 3.5vw;
-      display: block;
-      padding: 0 2.3em;        
-  }
-  .explore-btn{
-      margin-top: 10vh;
-      
-  }
-  .explore-btn .btn{
-      width: 150px;
-      border-radius: 30px;   
-      font-size: 1rem;
-  }
+    /* ============== WELCOME =========== */
+    #welcome-page h1{
+        padding-top: 27vh;
+        padding-bottom:2vh;
+        font-size:7.5vw;
+    }
+    .title-2{
+        margin:auto 8%;
+    }
+    .title-2 *{
+        font-size: 3.5vw; 
+    }
+    .explore-btn{
+        margin-top: 10vh;  
+    }
+    .explore-btn .btn{
+        width: 38%;
+        border-radius: 30px;   
+        font-size: 1rem;
+    }
+    #arrow a {
+        padding-top: 80px;
+    }
+    #arrow a span {
+        position: absolute;
+        top: 35px;
+        left: 48%;
+        width: 40px;
+        height: 40px;
+        margin-left: -12px;   
+    }
  
 
   /* ============== MOUSEWARE DEMO =========== */
 
     #mouseware-demo{
-        margin: 2vh auto auto auto;
+        margin: 4vh auto auto auto;
         text-align: center;
     }
     #mouseware-demo h1{
@@ -1067,108 +1177,110 @@ address{
     }
 
     /* ============== Features =========== */
-    #features{
-        
-    }
     #features h1{
         text-align: center;
     font-size: 4vh;
     margin-bottom: 50px;
     }
-.f1,
-.f2,
-.f3,
-.f4,
-.f5{
-    display: flex;
-    align-items: flex-start;
-    padding:30px 60px;
-}
+    .f1,
+    .f2,
+    .f3,
+    .f4,
+    .f5{
+        display: flex;
+        align-items: flex-start;
+        padding:30px 50px;
+    }
 
-.f1-icon,
-.f2-icon,
-.f3-icon,
-.f4-icon,
-.f5-icon{
-    background-image: linear-gradient(to right, var(--color_3), var(--color_4));
-    padding:10px;
-    border-radius: 10px;
-}
+    .f1-icon,
+    .f2-icon,
+    .f3-icon,
+    .f4-icon,
+    .f5-icon{
+        background-image: linear-gradient(to right, var(--color_3), var(--color_4));
+        padding:5px;
+        border-radius: 10px;
+    }
+    #features p{
+        font-size: 2vh;
+        margin:10px;
+    }
 
-#features p{
-    font-size: 2vh;
-    margin:10px;
-}
+    /* ============== WHO WILL USE THIS? =========== */
+    #users{
+        text-align: center;
+    }
+    #users h1{
+        font-size: 4vh;
+    }
+    .thumbnail-1, .thumbnail-2, .user-caption{
+        margin-top:3%;
+    }
+    .sec-1,
+    .sec-2,
+    .sec-3,
+    .sec-4,
+    .sec-5,
+    .sec-6{
+        display: block;    
+        text-align: center;
+    }
+    #users p{
+        padding-left: 10%;
+        padding-right:10%;
+    }
+    .user-caption *{
+        font-size:2.5vh;
+    }
 
-/* ============== WHO WILL USE THIS? =========== */
-#users{
-    text-align: center;
-}
-#users h1{
-    font-size: 4vh;
-}
-
-.thumbnail-1, .thumbnail-2, .user-caption{
-    margin-top:3%;
-}
-.sec-1,
-.sec-2,
-.sec-3,
-.sec-4,
-.sec-5,
-.sec-6{
-    display: block;    
-    text-align: center;
-}
-
-#users p{
-    padding-left: 10%;
-    padding-right:10%;
-}
-.user-caption *{
-    font-size:2.5vh;
-}
-
-/* ============== TIMELINE =========== */
-
-.timeline-title{
-    margin-top: 20px;
-    text-align:center;
-}
-.timeline-title h1{
-    font-size: 4vh;
-}
-.timeline-badge img{
-    height:80px;
-    position:absolute;
-    left:20px;
-}
-
-.righting-wrap .causale{
-    display: none;
-}
-h5.importo{
-    color: #E5E0D9;
-    text-align:center;
-    margin-bottom: -90px;
-    margin-left:-60px;
-    margin-right: 20px;
-}
-
-
-/* ==========    CARAOUSEL =============*/
-#award-carousel{
-    text-align: center;
-    margin-bottom:5%;
-}
-#award-carousel h1{
-    margin:5% 0;
-    font-size: 4vh;
-  }
-  .carousel-inner img{
-    max-width: 100%;
-    height: auto;
-  }
-
-
+    /* ============== TIMELINE =========== */
+    .timeline-title{
+        margin-top: 20px;
+        text-align:center;
+    }
+    .timeline-title h1{
+        font-size: 4vh;
+    }
+    .timeline-badge img{
+        height:80px;
+        position:absolute;
+        left:20px;
+    }
+    .clear{
+        display: none;
+    }
+    
+    .righting-wrap .causale{
+        display: none;
+    }
+    .righting-wrap{
+        backdrop-filter: blur(100px);
+    }
+    
+    h5.importo{
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #E5E0D9;
+        text-align:center;
+        margin-top: 10px;
+        margin-bottom: -90px;
+        margin-left:-40px;
+        margin-right: 49px;
+    }
+    
+    
+    /* ==========    CARAOUSEL =============*/
+    #award-carousel{
+        text-align: center;
+        margin-bottom:5%;
+    }
+    #award-carousel h1{
+        margin:5% 0;
+        font-size: 4vh;
+      }
+      .carousel-inner img{
+        max-width: 100%;
+        height: auto;
+      }
+  
+  
 }
