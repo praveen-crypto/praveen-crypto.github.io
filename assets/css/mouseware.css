@@ -74,7 +74,7 @@ nav{
 
 .contact-us:hover,
 .contact-us:focus{
-    background-image: linear-gradient(to right, #F87149,#F02E5F);
+    background-image: linear-gradient(to right,#F02E5F , #F87149);
     cursor: pointer;
 }
 
@@ -85,11 +85,12 @@ nav{
 .modal{
     background-color: rgba(8, 8, 11, 0.6);
     backdrop-filter: blur(40px);
-    
-  }
+}
+
 .modal-dialog *{
       background-color: var(--color_1);
 }
+
 .modal-content{
     box-shadow: 3px 3px 6px rgb(50, 50, 50, 0.8), -3px -3px 6px rgb(50, 50, 50, 0.8);
 }
@@ -191,9 +192,13 @@ textarea:focus{
     color: rgba(240, 46, 95, 0.7);
     
 }
-.map i:hover{
+.modal-mail-id:hover i{
     color: var(--color_4);
 }
+.modal-mail-id p{
+    color: rgba(206, 206, 206, 0.616);
+}
+
 
 
 
@@ -209,10 +214,6 @@ textarea:focus{
     font-size:12px;
     font-weight:bold;  
     font-stretch:extra-expanded;
-}
-
-.title-2 *{
-    font-weight:bold;
 }
 
 #welcome-page mark{
@@ -321,7 +322,6 @@ textarea:focus{
     font-weight:bold;
     margin-bottom: 50px;
 }
-
 .f1,
 .f2,
 .f3,
@@ -330,7 +330,6 @@ textarea:focus{
     display:flex;   
     padding:20px;
 }
-
 .f1-icon,
 .f2-icon,
 .f3-icon,
@@ -340,12 +339,34 @@ textarea:focus{
     padding:10px;
     border-radius: 10px;
 }
-
 #features p{
     font-size: 12pt;
     margin:10px;
     font-weight:600;
 }
+
+.f1-icon:hover,
+.f2-icon:hover,
+.f3-icon:hover,
+.f4-icon:hover,
+.f5-icon:hover{
+    background: rgba(0, 0, 0, 0) ;
+
+}
+.f-i .img-on{
+    height:70px;
+}
+.f-i .img-off{
+    height:70px;
+}
+.f-i:hover .img-off{
+    display: inline;
+}
+.f-i:hover .img-on{
+    display: none;
+}
+
+
 
 
 
@@ -369,11 +390,18 @@ textarea:focus{
     text-align: center;
 }
 
+
 #users p{
     padding-left: 10%;
     padding-right:10%;
 }
 
+.thumbnail-1 .img-on,
+.thumbnail-1 .img-off,
+.thumbnail-2 .img-on,
+.thumbnail-2 .img-off{
+    height: 120px;
+}
 
 .img-off, .sec-1:hover .img-on{
     display: none;
@@ -455,6 +483,9 @@ textarea:focus{
     color: #ff9a7b;
 }
 
+.user-caption > .col > h2{
+    color:var(--color_3);
+}
 
 
 /* ==============================================================
@@ -724,33 +755,33 @@ textarea:focus{
                         FOOTER
 =================================================================*/
 footer{
-  color:black;
-  background: #E5E0D9;
+    color:black;
+    background: #E5E0D9;
 }
 .section-1 h1{
-  font-weight: bold;
-  font-size:1.7rem;
-  margin-bottom:2%;
-  width:80%;
+    font-weight: bold;
+    font-size:1.7rem;
+    margin-bottom:2%;
+    width:80%;
 }
 .section-1 p{
-  color:rgba(100, 100, 100);
-  font-weight: 500;
-  font-size:1.2rem;
-  margin-top:3%;
+    color:rgba(100, 100, 100);
+    font-weight: 500;
+    font-size:1.2rem;
+    margin-top:3%;
 }
 address{
-  font-weight:bold;
-  font-size: 1rem;
+    font-weight:bold;
+    font-size: 1rem;
 }
 
 .section-2 h4{
-  font-size:1.4rem;
-  font-weight: bold;
+    font-size:1.4rem;
+    font-weight: bold;
 
 }
 .section-2 sup{
-  font-size: 0.7rem;
+    font-size: 0.7rem;
 }
 
 
@@ -776,7 +807,7 @@ address{
 
   /* ============== WELCOME =========== */
     #welcome-page h1{
-      padding-top: 20vh;
+      padding-top: 25vh;
       padding-bottom:2%;
       font-size: 4.5vw;     
     }
@@ -813,6 +844,24 @@ address{
         height: auto;
     }
 
+    
+    /* ============== FOOTER =========== */
+    footer{
+        padding: 3% 0% 3% 0%;
+    }
+    .footer-heading h1{
+        font-weight: bold;
+        font-size: 4.4vmax;
+    }
+    .footer-para p{
+        font-size:clamp(5px, 1.1vw, 50px);
+        padding: 5% 0% 0% 0%
+    }
+    .email-id address{
+        font-weight:bold;
+        font-size: 1rem;
+    }
+
 
 
 
@@ -834,7 +883,7 @@ address{
 
   /* ============== WELCOME =========== */
     #welcome-page h1{
-      padding-top: 20vh;
+      padding-top: 25vh;
       padding-bottom:2%;
       font-size: 4.5vw;     
     }
@@ -870,6 +919,24 @@ address{
         height: auto;
     }
 
+    
+    /* ============== FOOTER =========== */
+    footer{
+        padding: 3% 0% 3% 0%;
+    }
+    .footer-heading h1{
+        font-weight: bold;
+        font-size: clamp(5px, 1.1vw, 50px);
+    }
+    .footer-para p{
+        font-size:clamp(5px, 1.1vw, 50px);
+        padding: 5% 0% 0% 0%
+    }
+    .email-id address{
+        font-weight:bold;
+        font-size: 1rem;
+    }
+
 
   
 }
@@ -890,7 +957,7 @@ address{
 
   /* ============== WELCOME =========== */
     #welcome-page h1{
-        padding-top: 20vh;
+        padding-top: 25vh;
         padding-bottom:2%;
         font-size: 8vh;
     }
@@ -921,6 +988,23 @@ address{
     .carousel-inner img{
         max-width: 100%;
         height: auto;
+    }
+
+    /* ============== FOOTER =========== */
+    footer{
+        padding: 3% 0% 3% 0%;
+    }
+    .footer-heading h1{
+        font-weight: bold;
+        font-size: clamp(5px, 1.1vw, 50px);
+    }
+    .footer-para p{
+        font-size:clamp(5px, 1.1vw, 50px);
+        padding: 5% 0% 0% 0%
+    }
+    .email-id address{
+        font-weight:bold;
+        font-size: 1rem;
     }
   
 
@@ -953,7 +1037,7 @@ address{
     }
     #welcome-page h1{
         font-stretch: extra-expanded;
-        padding-top:20vh;
+        padding-top:25vh;
         font-size:5vw;
     }
     .title-2{
@@ -988,14 +1072,63 @@ address{
     /*============== TIMELINE =========== */ 
     .timeline-badge img{
       height:120px;
-  }
+    }
     /*============== CAROUSEL =========== */ 
     .carousel-inner img{
         max-width: 100%;
         height: auto;
     }
+    /* ============== FOOTER =========== */
+    footer{
+        padding: 3% 0% 3% 0%;
+    }
+    .footer-heading h1{
+        font-weight: bold;
+        font-size: clamp(5px, 1.1vw, 50px);
+    }
+    .footer-para p{
+        font-size:clamp(5px, 1.1vw, 50px);
+        padding: 5% 0% 0% 0%
+    }
+    .email-id address{
+        font-weight:bold;
+        font-size: 1rem;
+    }
 
-  
+
+
+    /* =================  FOOTER  ====================*/
+    footer{
+        color:black;
+        background: #E5E0D9;
+    }
+    .section-1 h1{
+        font-weight: bold;
+        font-size:1.7rem;
+        margin-bottom:2%;
+        width:80%;
+    }
+    .section-1 p{
+        color:rgba(100, 100, 100);
+        font-weight: 500;
+        font-size:1.2rem;
+        margin-top:3%;
+    }
+    address{
+        font-weight:bold;
+        font-size: 1rem;
+    }
+
+    .section-2 h4{
+        font-size:1.4rem;
+        font-weight: bold;
+
+    }
+    .section-2 sup{
+        font-size: 0.7rem;
+    }
+
+    
 
 }
 
@@ -1125,7 +1258,7 @@ address{
 
     /* ============== WELCOME =========== */
     #welcome-page h1{
-        padding-top: 27vh;
+        padding-top: 30vh;
         padding-bottom:2vh;
         font-size:7.5vw;
     }
@@ -1176,6 +1309,7 @@ address{
         margin: 2vh 0;
     }
 
+
     /* ============== Features =========== */
     #features h1{
         text-align: center;
@@ -1205,6 +1339,7 @@ address{
         font-size: 2vh;
         margin:10px;
     }
+
 
     /* ============== WHO WILL USE THIS? =========== */
     #users{
