@@ -296,11 +296,20 @@ textarea:focus{
                         PRODUCTS
 =================================================================*/
 
-.products h1{
+#products h1{
     font-weight: bold;
 }
 
-.products .lead{
+.product-details{
+    border-radius: 15px;
+    border: 2px solid #f87149;
+    margin: 2% 0;
+    padding: 2% 0;
+}
+.product-details h2{
+    font-weight: bold;
+}
+.product-details .lead{
     color:#d8c9b2;
     font-weight: bold;
 }
@@ -377,7 +386,7 @@ textarea:focus{
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
-    padding: 53px 56.5px;
+    padding: 53px 57.5px;
 }
 .middle i{
     color:#fff;
@@ -501,7 +510,8 @@ address{
         font-size: clamp(1vw, 2vw, 60pt);
         font-weight: bold;
     }
-    #products .lead{
+
+    #product-details .lead{
         font-size: clamp(5px, 1.1vw, 50px);
         margin: 1% 0% 4% 0%;
         color:#d8c9b2;
@@ -1086,10 +1096,8 @@ address{
         flex-direction: row;
         justify-content: center;        
     }
-    #products sup{
-        font-size: 0.6em;
-        padding-top:0.4vh;
-
+    .product-details h2{
+        font-size: 4vw;
     }
     #products .lead{
         font-size: 3vw;
@@ -1098,7 +1106,7 @@ address{
         font-weight: bold;
     }
     
-    .learn-more .btn{
+    .product-details .learn-more .btn{
         font-size: 3vw;
         padding:10px 15px 10px 15px;
         margin: 1vh 0%;
@@ -1140,6 +1148,27 @@ address{
         font-size: 0.9rem;
         color:rgba(210, 210, 210, 0.8)
     }
+    .middle{
+        width: 100%;
+        height: auto;
+    }
+    .middle i{
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 42.8%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+        padding-top: 150px;
+        padding-bottom: 150px;
+        
+        
+        
+
+        
+    }
 
     /* ============== FOOTER =========== */
     footer .container{
@@ -1163,5 +1192,46 @@ address{
         margin: 1vh 0;
     }
 
+
+}
+
+@media screen and (max-width: 380px ){
+    /* ============== TEAM =========== */
+    .team{
+        margin: 1vh 0;
+    }
+    #team h1{
+        font-weight: bold;
+        font-size: 4.3vw;
+        text-align:center;
+        margin: 0.2vh 0;
+    }
+    
+    .team-members h5{
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 5% 0 0 0 ;
+        
+    }
+    .team-members p{
+        font-size: 0.9rem;
+        color:rgba(210, 210, 210, 0.8)
+    }
+    .middle{
+        width: 100%;
+        height: auto;
+    }
+    .middle i{
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 42.3%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+        padding-top: 34.5vw;
+        padding-bottom: 34.5vw;    
+    }
 
 }
