@@ -69,12 +69,13 @@ nav{
 .contact-us{
     border: none;
     border-radius:40px;
-    background: #F87149;   
+    background-image: linear-gradient(to right,#F02E5F , #F87149);    
 }
 
 .contact-us:hover,
 .contact-us:focus{
-    background-image: linear-gradient(to right,#F02E5F , #F87149);
+    background: #F87149;   
+    
     cursor: pointer;
 }
 

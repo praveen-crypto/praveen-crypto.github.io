@@ -58,25 +58,25 @@ nav{
 }
 
 .logo{
-    height: 60px;
-    width: 160px;
+    height: auto;
+    width: 5%;
 }
 
 .nav-link{
     font-family: sans-serif ;
-    font-weight: bold;
-    
+    font-weight: bold;    
 }
 
 .contact-us{
     border: none;
     border-radius:40px;
-    background: #F87149;   
+    background-image: linear-gradient(to right,#F02E5F , #F87149);
 }
 
 .contact-us:hover,
 .contact-us:focus{
-    background-image: linear-gradient(to right,#F02E5F , #F87149);
+    background: #F87149;
+    
     cursor: pointer;
 }
 
@@ -426,14 +426,8 @@ address{
     font-size: 1rem;
 }
 
-.section-2 h4{
-    font-size:1.4rem;
-    font-weight: bold;
 
-}
-.section-2 sup{
-    font-size: 0.7rem;
-}
+
 
 
 
@@ -450,7 +444,13 @@ address{
     }
     .contact-us{
         width:auto;
-        
+    }
+    .navbar-brand{
+        width:50%;
+    }
+    .logo{
+        height: auto;
+        width:20%;
     }
     .nav-link{
         margin: auto 1rem;
@@ -565,14 +565,7 @@ address{
     footer{
         padding: 3% 0% 3% 0%;
     }
-    .footer-heading h1{
-        font-weight: bold;
-        font-size: 4.4vmax;
-    }
-    .footer-para p{
-        font-size:clamp(5px, 1.1vw, 50px);
-        padding: 5% 0% 0% 0%
-    }
+    
     .email-id address{
         font-weight:bold;
         font-size: 1rem;
@@ -586,6 +579,13 @@ address{
     }
     .contact-us{
         width:auto;
+    }
+    .navbar-brand{
+        width:50%;
+    }
+    .logo{
+        height: auto;
+        width:20%;
     }
     .nav-link{
         margin: auto 1rem;
@@ -688,14 +688,7 @@ address{
     footer{
         padding: 3% 0% 3% 0%;
     }
-    .footer-heading h1{
-        font-weight: bold;
-        font-size: clamp(5px, 1.1vw, 50px);
-    }
-    .footer-para p{
-        font-size:clamp(5px, 1.1vw, 50px);
-        padding: 5% 0% 0% 0%
-    }
+    
     .email-id address{
         font-weight:bold;
         font-size: 1rem;
@@ -710,6 +703,13 @@ address{
     }
     .contact-us{
         width:auto;
+    }
+    .navbar-brand{
+        width:50%;
+    }
+    .logo{
+        height: auto;
+        width:20%;
     }
     .nav-link{
         margin: auto 1rem;
@@ -807,14 +807,7 @@ address{
     footer{
         padding: 3% 0% 3% 0%;
     }
-    .footer-heading h1{
-        font-weight: bold;
-        font-size: clamp(5px, 1.1vw, 50px);
-    }
-    .footer-para p{
-        font-size:clamp(5px, 1.1vw, 50px);
-        padding: 5% 0% 0% 0%
-    }
+    
     .email-id address{
         font-weight:bold;
         font-size: 1rem;
@@ -829,11 +822,19 @@ address{
         margin: 5% 0% 5% 0%;
     }
     .nav-link{
+        width:auto;
         margin: auto 1rem;
         font-size: 1rem !important;
     }
     .contact-us{
         width:auto;
+    }
+    .navbar-brand{
+        width:50%;
+    }
+    .logo{
+        height: auto;
+        width:20%;
     }
 
     /* ============WELCOME PAGE=============*/
@@ -895,19 +896,41 @@ address{
     #team h1{
         font-size: 3vw;
     }
+    /* ============== TEAM =========== */
+    .team{
+        margin: 1vh 0;
+    }
+    #team h1{
+        font-weight: bold;
+        font-size: 3vw;
+        margin: 0.2vh 0;
+    }
+    .team-members h5{
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 5% 0 0 0 ;       
+    }
+    .team-members p{
+        font-size: 0.9rem;
+        color:rgba(210, 210, 210, 0.8);
+    }
+    .middle{
+        width: 100%;
+        height: auto;
+    }
+    .middle i{
+        position: absolute;
+        top: 41.8%;
+        width: 100%;
+        padding-top: 40%;
+        padding-bottom: 40%;
+    }
 
     /* ============== FOOTER =========== */
     footer{
         padding: 3% 0% 3% 0%;
     }
-    .footer-heading h1{
-        font-weight: bold;
-        font-size: clamp(5px, 1.1vw, 50px);
-    }
-    .footer-para p{
-        font-size:clamp(5px, 1.1vw, 50px);
-        padding: 5% 0% 0% 0%
-    }
+    
     .email-id address{
         font-weight:bold;
         font-size: 1rem;
@@ -919,11 +942,261 @@ address{
     .contact-us{
         width:auto;
     }
+
+    /* ============== GLOBAL =========== */
+     .row hr{
+        margin: 5% 0% 5% 0%;
+    }
+    .nav-link{
+        margin: auto 1rem;
+        font-size: 1rem !important;
+    }
+    
+
+    /* =============    NAVIGATION =======================*/
+    .contact-us{
+        width:auto;
+    }
+    .navbar-brand{
+        width:30%;
+    }
+    .logo{
+        height: auto;
+        width:50%;
+    }
+
+    /* ============WELCOME PAGE=============*/
+    #welcome-page{
+        height:100vh;
+    }
+
+    #welcome-page h1{
+        padding-top: 23vh;
+        padding-bottom:3%;
+        font-size: 6vw;
+    }
+
+    .title-2 {
+        margin: auto 10%;
+    }
+    .title-2 *{
+        font-size: 2.1vw;
+    }
+    .explore-btn{
+        margin-top: 10vh;
+    }
+
+    .explore-btn .btn{
+        width:25%;
+        margin: 10px;
+        border-radius: 50px;
+        font-size:1.5rem;
+    }
+
+    /* ============== PRODUCTS =========== */
+    #products h1{
+        font-size: 3vw;
+    }
+    #products .lead{
+        font-size: 1.8vw;
+        margin: 4% 0%;
+    }
+    .learn-more .btn{
+        font-size: 1.8vw;
+        padding:10px 15px 10px 15px;
+    }
+
+    /* ============== ABOUT =========== */
+     #about h1{
+        margin: 1vh 0;
+        font-size: 3vw;
+        
+    }
+    #about p{
+        font-size: 1.8vw;
+        margin-top:1%;
+    }
+
+    /* ============== TEAM =========== */
+    .team{
+        margin: 1vh 0;
+    }
+    #team h1{
+        font-weight: bold;
+        font-size: 3vw;
+        margin: 0.2vh 0;
+    }
+    .team-members h5{
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 5% 0 0 0 ;       
+    }
+    .team-members p{
+        font-size: 0.9rem;
+        color:rgba(210, 210, 210, 0.8)
+    }
+    .middle{
+        width: 100%;
+        height: auto;
+    }
+    .middle i{
+        position: absolute;
+        top: 40%;
+        width: 100%;
+        padding-top: 38%;
+        padding-bottom: 37%;
+    }
+
+    /* ============== FOOTER =========== */
+    footer{
+        padding: 3% 0% 3% 0%;
+    }
+    .section-1 h1{
+        font-size:1.7rem;
+        margin-bottom:2%;
+        width:80%;
+    }
+    .section-1 p{
+        color:rgba(100, 100, 100);
+        font-weight: 500;
+        font-size:1.2rem;
+        margin-top:3%;
+    }
+    
+    .email-id address{
+        font-weight:bold;
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 768px){
     .contact-us{
-        width:125px;
+        width:auto;
+    }
+
+    /* ============== GLOBAL =========== */
+     .row hr{
+        margin: 5% 0% 5% 0%;
+    }
+    .nav-link{
+        margin: auto 1rem;
+        font-size: 1rem !important;
+    }
+    
+
+    /* =============    NAVIGATION =======================*/
+    .contact-us{
+        width:auto;
+    }
+    .navbar-brand{
+        width:30%;
+    }
+    .logo{
+        height: auto;
+        width:50%;
+    }
+
+    /* ============WELCOME PAGE=============*/
+    #welcome-page{
+        height:100vh;
+    }
+
+    #welcome-page h1{
+        padding-top: 23vh;
+        padding-bottom:3%;
+        font-size: 2.6rem;
+    }
+
+    .title-2 {
+        margin: auto 10%;
+    }
+    .title-2 *{
+        font-size: 1rem;
+    }
+    .explore-btn{
+        margin-top: 10vh;
+    }
+
+    .explore-btn .btn{
+        width:30%;
+        margin: 10px;
+        border-radius: 50px;
+        font-size:1.5rem;
+    }
+
+    /* ============== PRODUCTS =========== */
+    #products h1{
+        font-size: 3vw;
+    }
+    #products .lead{
+        font-size: 1.8vw;
+        margin: 4% 0%;
+    }
+    .learn-more .btn{
+        font-size: 1.8vw;
+        padding:10px 15px 10px 15px;
+    }
+
+    /* ============== ABOUT =========== */
+     #about h1{
+        margin: 1vh 0;
+        font-size: 3vw;
+        
+    }
+    #about p{
+        font-size: 1.8vw;
+        margin-top:1%;
+    }
+
+    /* ============== TEAM =========== */
+    .team{
+        margin: 1vh 0;
+    }
+    #team h1{
+        font-weight: bold;
+        font-size: 3vw;
+        margin: 0.2vh 0;
+    }
+    .team-members h5{
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 5% 0 0 0 ;       
+    }
+    .team-members p{
+        font-size: 0.9rem;
+        color:rgba(210, 210, 210, 0.8)
+    }
+    .middle{
+        width: 100%;
+        height: auto;
+    }
+    .middle i{
+        position: absolute;
+        top: 40%;
+        width: 100%;
+        padding-top: 37.5%;
+        padding-bottom: 37.5%;
+    }
+
+    /* ============== FOOTER =========== */
+    footer{
+        padding: 3% 0% 3% 0%;
+    }
+    .section-1 h1{
+        font-size:1.7rem;
+        margin-bottom:2%;
+        width:80%;
+    }
+    .section-1 p{
+        color:rgba(100, 100, 100);
+        font-weight: 500;
+        font-size:1.2rem;
+        margin-top:3%;
+    }
+    
+    .email-id address{
+        font-weight:bold;
+        font-size: 1rem;
     }
 }
 
@@ -1043,9 +1316,10 @@ address{
     .modal-btn .btn:hover{
         width:45%;
     }
-    .map{
+    .map-container-section iframe{
         display:none;
     }
+    
 
 
     /* ============== WELCOME =========== */
@@ -1137,7 +1411,6 @@ address{
         text-align:center;
         margin: 0.2vh 0;
     }
-    
     .team-members h5{
         font-size: 1rem;
         font-weight: bold;
@@ -1162,12 +1435,7 @@ address{
         text-align: center;
         width: 100%;
         padding-top: 150px;
-        padding-bottom: 150px;
-        
-        
-        
-
-        
+        padding-bottom: 150px;        
     }
 
     /* ============== FOOTER =========== */
@@ -1188,11 +1456,521 @@ address{
         font-size: 1rem;
     }   
 
-    .section-2{
-        margin: 1vh 0;
+}
+
+@media only screen 
+and (min-width:360px)
+and (max-width:760px) 
+and (orientation:landscape){
+    /* ============== GLOBAL =========== */
+    
+    .row hr{
+        margin: 5% 0% 5% 0%;
     }
 
+    /* ============== NAVBAR =========== */
 
+    .logo{
+        height: auto;
+        width: 60%;
+    }
+
+    .navbar-toggler{
+        background: rgb(36, 36, 36);
+    }
+
+    .navbar-item{
+        padding-left: 2%;
+    }
+    .contact-us{
+        width:auto;
+        border-radius: 30px;
+    }
+
+    
+    /* ==========    MODAL  =============*/
+    .modal{
+        background-color: rgba(8, 8, 11, 0.6);
+        backdrop-filter: blur(40px);
+       
+    }
+    .modal-dialog *{
+        background-color: var(--color_1);
+    }
+    .modal-dialog{
+        margin: 0px 40px;
+    }
+    .modal-content{
+        box-shadow: 3px 3px 6px rgb(50, 50, 50, 0.8), -3px -3px 6px rgb(50, 50, 50, 0.8);
+    }
+    .modal-header{
+        border-bottom:none;
+    }
+    .modal-logo{
+        height:25px;
+        width:70px;
+    }
+    .modal-body{
+        padding: 0;
+    }
+    .fa-times{
+        color:#fff;
+    }
+    .form { 
+        padding:0;
+        margin: 3vw 0;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        text-align:center ;
+    }
+    .form-header{
+        margin-bottom:0;
+    }
+    .form-header h3{
+        font-size: 5vw;
+        margin-bottom: 0;
+    }
+    .md-form{
+        margin: 5% 0;
+    }
+    .md-form i{
+        padding:3px;
+        color: var(--color_4);
+    }
+
+    input[type=text]{
+        border-bottom: auto;
+        cursor:auto;
+        width:70%;
+    }
+    input[type=text]:focus {   
+        border-bottom: 2px solid var(--color_4);
+    }
+
+    .text-area{
+        display: flex;
+        justify-content: center;       
+    }
+    textarea{
+        width:70%;
+        color: #E5E0D9; 
+    }
+    textarea:focus{
+        outline:0;
+        caret-color: #E5E0D9;
+        border: 2px solid var(--color_4);   
+    }
+    .modal-btn{
+        width:auto;
+        text-align: center;
+    }
+    .modal-btn .btn{
+        width:30%;
+        background-color:rgba(240, 46, 95, 0.8);
+        border: none;
+        color: #E5E0D9;
+        border-radius: 0;
+        transition: 0.3s;
+    }
+    .modal-btn .btn:hover{
+        width:45%;
+    }
+    .map-container-section iframe{
+        display:none;
+    }
+    
+
+
+    /* ============== WELCOME =========== */
+    #welcome-page h1{
+        padding-top: 27vh;
+        padding-bottom:1.8vh;
+        font-size: 2rem;
+        
+    }
+    .title-2{
+        margin: auto 3vw;
+    }
+    .title-2 *{
+        font-size: 1rem;   
+    }
+    .explore-btn{
+        margin-top: 10vh;
+        
+    }
+    .explore-btn .btn{
+        width: 38%;
+        border-radius: 30px;   
+        font-size: 1rem;
+    }
+    #arrow a {
+        padding-top: 80px;
+    }
+    #arrow a span {
+        position: absolute;
+        top: 35px;
+        left: 48%;
+        width: 40px;
+        height: 40px;
+        margin-left: -12px;   
+    }
+    
+
+    /* ============== PRODUCTS =========== */
+    #products{
+        margin-top:5vh;
+    }
+
+    #products h1{
+        font-size: 4.3vw;
+        font-weight: bold;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;        
+    }
+    .product-details h2{
+        font-size: 4vw;
+    }
+    #products .lead{
+        font-size: 3vw;
+        margin: 1% 0% 4% 0%;
+        color:#d8c9b2;
+        font-weight: bold;
+    }
+    
+    .product-details .learn-more .btn{
+        font-size: 3vw;
+        padding:10px 15px 10px 15px;
+        margin: 1vh 0%;
+    }
+
+    /* ============== ABOUT =========== */
+    #about h1{
+        margin: 1vh 0;
+        font-weight: bold;
+        font-size: 4.3vw;
+        text-align:center;
+        
+    }
+    #about p{
+        font-size: 3vw;
+        margin-top:1%;
+        color:#d8c9b2;
+        font-weight: bold;
+    }
+
+    /* ============== TEAM =========== */
+    .team{
+        margin: 1vh 0;
+    }
+    #team h1{
+        font-weight: bold;
+        font-size: 4.3vw;
+        text-align:center;
+        margin: 0.2vh 0;
+    }
+    
+    .team-members h5{
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 5% 0 0 0 ;
+        
+    }
+    .team-members p{
+        font-size: 0.8rem;
+        color:rgba(210, 210, 210, 0.8)
+    }
+    .middle{
+        width: 100%;
+        height: auto;
+    }
+    .middle i{
+        position: absolute;
+        top: 37.5%;        
+        width: 100%;
+        padding-top: 32%;
+        padding-bottom: 32%;       
+    }
+
+    /* ============== FOOTER =========== */
+    footer .container{
+        margin:2vh auto;
+        
+    }
+    .section-1 h1{
+        font-weight: bold;
+        font-size:20px;
+    }
+    .section-1 P{
+        margin-right: 13%;
+    }
+    
+    .email-id address{
+        font-weight:bold;
+        font-size: 1rem;
+    }   
+    
+}
+
+@media only screen 
+and (min-width:375px)
+and (max-width:820px) 
+and (orientation:landscape){
+    /* ============== GLOBAL =========== */
+    .row hr{
+        margin: 5% 0% 5% 0%;
+    }
+
+    /* ============== NAVBAR =========== */
+    .navbar{
+        margin-top:0;
+    }
+    .navbar-brand{
+        width: 20%;
+    }
+    .logo{
+        height: auto;
+        width: 60%;
+    }
+    .navbar-toggler{
+        background: rgb(36, 36, 36);
+    }
+    .navbar-item{
+        padding-left: 2%;
+    }
+    .contact-us{
+        width:180px;
+        border-radius: 30px;
+    }
+
+    
+    /* ==========    MODAL  =============*/
+    .modal{
+        background-color: rgba(8, 8, 11, 0.6);
+        backdrop-filter: blur(40px);
+       
+    }
+    .modal-dialog *{
+        background-color: var(--color_1);
+    }
+    .modal-dialog{
+        margin: 0px 40px;
+    }
+    .modal-content{
+        box-shadow: 3px 3px 6px rgb(50, 50, 50, 0.8), -3px -3px 6px rgb(50, 50, 50, 0.8);
+    }
+    .modal-header{
+        border-bottom:none;
+    }
+    .modal-logo{
+        height:25px;
+        width:70px;
+    }
+    .modal-body{
+        padding: 0;
+    }
+    .fa-times{
+        color:#fff;
+    }
+    .form { 
+        padding:0;
+        margin: 3vw 0;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        text-align:center ;
+    }
+    .form-header{
+        margin-bottom:0;
+    }
+    .form-header h3{
+        font-size: 5vw;
+        margin-bottom: 0;
+    }
+    .md-form{
+        margin: 5% 0;
+    }
+    .md-form i{
+        padding:3px;
+        color: var(--color_4);
+    }
+
+    input[type=text]{
+        border-bottom: auto;
+        cursor:auto;
+        width:70%;
+    }
+    input[type=text]:focus {   
+        border-bottom: 2px solid var(--color_4);
+    }
+
+    .text-area{
+        display: flex;
+        justify-content: center;       
+    }
+    textarea{
+        width:70%;
+        color: #E5E0D9; 
+    }
+    textarea:focus{
+        outline:0;
+        caret-color: #E5E0D9;
+        border: 2px solid var(--color_4);   
+    }
+    .modal-btn{
+        width:auto;
+        text-align: center;
+    }
+    .modal-btn .btn{
+        width:30%;
+        background-color:rgba(240, 46, 95, 0.8);
+        border: none;
+        color: #E5E0D9;
+        border-radius: 0;
+        transition: 0.3s;
+    }
+    .modal-btn .btn:hover{
+        width:45%;
+    }
+    .map-container-section iframe{
+        display:none;
+    }
+    
+
+
+    /* ============== WELCOME =========== */
+    #welcome-page h1{
+        padding-top: 27vh;
+        padding-bottom:1.8vh;
+        font-size: 3rem;
+        
+    }
+    .title-2{
+        margin: auto 10%;
+    }
+    .title-2 *{
+        font-size: 1rem;   
+    }
+    .explore-btn{
+        margin-top: 10vh;
+        
+    }
+    .explore-btn .btn{
+        width: 20%;
+        border-radius: 30px;   
+        font-size: 1rem;
+    }
+    #arrow a {
+        padding-top: 80px;
+    }
+    #arrow a span {
+        position: absolute;
+        top: 35px;
+        left: 48%;
+        width: 40px;
+        height: 40px;
+        margin-left: -12px;   
+    }
+    
+
+    /* ============== PRODUCTS =========== */
+    #products{
+        margin-top:5vh;
+    }
+
+    #products h1{
+        font-size: 2rem;
+        font-weight: bold;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;        
+    }
+    .product-details h2{
+        font-size: 2rem;
+    }
+    #products .lead{
+        font-size: 1rem;
+        margin: 1% 0% 4% 0%;
+        color:#d8c9b2;
+        font-weight: bold;
+    }
+    
+    .product-details .learn-more .btn{
+        font-size: 1rem;
+        padding:10px 15px 10px 15px;
+        margin: 1vh 0%;
+    }
+
+    /* ============== ABOUT =========== */
+    #about h1{
+        margin: 1vh 0;
+        font-weight: bold;
+        font-size: 2rem;
+        text-align:center;
+        
+    }
+    #about p{
+        font-size: 1rem;
+        margin-top:1%;
+        color:#d8c9b2;
+        font-weight: bold;
+    }
+
+    /* ============== TEAM =========== */
+    .team{
+        margin: 1vh 0;
+    }
+    #team h1{
+        font-weight: bold;
+        font-size: 4.3vw;
+        text-align:center;
+        margin: 0.2vh 0;
+    }
+    
+    .team-members h5{
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 5% 0 0 0 ;
+        
+    }
+    .team-members p{
+        font-size: 0.8rem;
+        color:rgba(210, 210, 210, 0.8);
+        
+    }
+    .middle{
+        width: 100%;
+        height: auto;
+    }
+    .middle i{
+        position: absolute;
+        top: 40%;        
+        width: 100%;
+        padding-top: 36.5%;
+        padding-bottom: 36.5%;       
+    }
+
+    /* ============== FOOTER =========== */
+    footer .container{
+        margin:2vh auto;
+        
+    }
+    .section-1 h1{
+        font-weight: bold;
+        font-size:20px;
+    }
+    .section-1 P{
+        margin-right: 13%;
+    }
+    
+    .email-id address{
+        font-weight:bold;
+        font-size: 1rem;
+    }   
+    
 }
 
 @media screen and (max-width: 380px ){
@@ -1225,13 +2003,13 @@ address{
         transition: .5s ease;
         opacity: 0;
         position: absolute;
-        top: 42.3%;
+        top: 42.5%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         text-align: center;
         width: 100%;
-        padding-top: 34.5vw;
-        padding-bottom: 34.5vw;    
+        padding-top: 40.7%;
+        padding-bottom: 42.4%;    
     }
 
 }
