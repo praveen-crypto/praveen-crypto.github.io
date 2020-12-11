@@ -28,7 +28,9 @@ body {
     font-family: sans-serif;
     color:white;
     height:100vh;
+    width:100vw;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 
 }
 
@@ -54,10 +56,14 @@ nav{
     background-color:rgba(8, 8, 11, 0.7);
     scroll-behavior: smooth;
     backdrop-filter: blur(30px);
+    width:100vw;
+}
+.navbar-brand{
+    width:50%;
 }
 .logo{
-    height: 60px;
-    width: 160px;
+    height: auto;
+    width: 26%;
 }
 
 .nav-link{
@@ -300,6 +306,7 @@ textarea:focus{
 
 #mouseware-demo{
     margin: 2rem auto auto auto;
+    overflow-x: hidden;
 }
 
 #mouseware-demo h1{
@@ -330,21 +337,17 @@ textarea:focus{
     height: auto;
 }
 
-.icon-1 p{
-    color:rgba(255, 255, 255, 0.4);
-    display: inline;
-}
-.icon-2 p{
-    color:rgba(255, 255, 255, 0.4);
-    display: inline-flex;
-    text-align: center;
-    
-    
+.icon-1 p,
+.icon-2 p,
+.icon-3 p{
+    color: #d8c9b2;
+    display: inline-grid;
+    margin-left:5%;
 }
 
-.icon-3 p{
-    color:rgba(255, 255, 255, 0.4);
-    display: inline;
+.demo-video iframe{
+    width:100%;
+    
 }
 
 /* ==============================================================
@@ -376,6 +379,7 @@ textarea:focus{
     font-size: 12pt;
     margin:10px;
     font-weight:600;
+    color: #d8c9b2;
 }
 
 .f1-icon:hover,
@@ -620,7 +624,7 @@ textarea:focus{
   position: absolute;
   content: " ";
   width: 2px;
-  background-color: #F87149;
+  background-color: #f87149;
   left: 50%;
   margin-left: -1.5px;
 }
@@ -829,6 +833,8 @@ address{
     .row hr{
         margin: 5% 0% 5% 0%;
     }
+
+
     .contact-us{
         width:auto;
     }
@@ -1052,10 +1058,6 @@ address{
    .row hr{
        margin: 5% 0% 5% 0%;
     }
-    .logo{
-        height: 50px;
-        width: 100px;
-    }
     .nav-link{
         margin: auto 1rem;
         font-size: 1rem !important;
@@ -1184,8 +1186,8 @@ address{
         margin: 5% 0% 5% 0%;
     }
     .logo{
-        height: 40px;
-        width: 85px;
+        height: auto;
+        width: 50%;
     }
     .navbar-toggler{
         background: rgb(36, 36, 36);
@@ -1197,11 +1199,10 @@ address{
         width:auto;
         border-radius: 30px;
     }
-     /* ==========    MODAL  =============*/
-     .modal{
+      /* ==========    MODAL  =============*/
+    .modal{
         background-color: rgba(8, 8, 11, 0.6);
         backdrop-filter: blur(40px);
-       
     }
     .modal-dialog *{
         background-color: var(--color_1);
@@ -1226,68 +1227,10 @@ address{
         color:#fff;
     }
     .form { 
-        padding:0;
-        margin: 3vw 0;
-        display: flex;
-        flex-direction: column; 
-        justify-content: center;
-        text-align:center ;
-    }
-    .form-header{
-        margin-bottom:0;
-    }
-    .form-header h3{
-        font-size: 5vw;
-        margin-bottom: 0;
-    }
-    .md-form{
-        margin: 5% 0;
-    }
-    .md-form i{
-        padding:3px;
-        color: var(--color_4);
-    }
-
-    input[type=text]{
-        border-bottom: auto;
-        cursor:auto;
-        width:70%;
-    }
-    input[type=text]:focus {   
-        border-bottom: 2px solid var(--color_4);
-    }
-
-    .text-area{
-        display: flex;
-        justify-content: center;       
-    }
-    textarea{
-        width:70%;
-        color: #E5E0D9; 
-    }
-    textarea:focus{
-        outline:0;
-        caret-color: #E5E0D9;
-        border: 2px solid var(--color_4);   
-    }
-    .modal-btn{
-        width:auto;
-        text-align: center;
-    }
-    .modal-btn .btn{
-        width:30%;
-        background-color:rgba(240, 46, 95, 0.8);
-        border: none;
-        color: #E5E0D9;
-        border-radius: 0;
-        transition: 0.3s;
-    }
-    .modal-btn .btn:hover{
-        width:45%;
-    }
-    .map{
         display:none;
-    }
+        
+    }   
+    
 
     /* ============== WELCOME =========== */
     #welcome-page h1{
@@ -1339,7 +1282,25 @@ address{
     }
     
     .icon-1, .icon-2, .icon-3{
-        margin: 2vh 0;
+        margin: 10% 0%;
+        text-align: center;
+        border: 2px solid rgba(255, 255, 255, 0.103);
+        border-radius:10px;
+    }
+    .icon-1 img,
+    .icon-2 img,
+    .icon-3 img{
+        width:80%;
+    }
+    .icon-1 p,
+    .icon-2 p,
+    .icon-3 p{
+        color: #d8c9b2;
+        display: inline-flex;
+        flex-direction: column;
+        text-align: center;
+        
+        
     }
 
 
@@ -1402,6 +1363,12 @@ address{
     }
 
     /* ============== TIMELINE =========== */
+    #timeline::before{
+        position:absolute;
+        left:220px;
+        
+    }
+    
     .timeline-title{
         margin-top: 20px;
         text-align:center;
@@ -1412,28 +1379,57 @@ address{
     .timeline-badge img{
         height:80px;
         position:absolute;
-        left:20px;
+        left:85px;
     }
     .clear{
         display: none;
     }
-    
-    .righting-wrap .causale{
-        display: none;
-    }
     .righting-wrap{
+        padding: 5%;
+    }
+    
+    .w-1,
+    .w-2,
+    .w-3,
+    .w-4{       
         backdrop-filter: blur(100px);
+        position: absolute;
+        left:20px;
+        padding:0;
+        width: 80%;
+    }
+
+    .w-1 .causale,
+    .w-2 .causale,
+    .w-3 .causale,
+    .w-4 .causale{
+        width: 80%;        
+        margin-top: 20%;
+        margin-right: 30%;
+        margin-left: -17%;
+    }
+    .w-4 .causale{
+        margin-top: 10%;
     }
     
     h5.importo{
         background-color: rgba(0, 0, 0, 0.8);
+        font-size: 1rem;
+        width: 70%;
         color: #E5E0D9;
-        text-align:center;
-        margin-top: 10px;
-        margin-bottom: -90px;
+        text-align:left;
+        margin-bottom: -100px;
         margin-left:-40px;
         margin-right: 49px;
     }
+    .righting-wrap .causale{
+        display: block;
+        text-align: justify;
+        font-size:0.8rem;     
+              
+    }
+    
+
     
     
     /* ==========    CARAOUSEL =============*/
