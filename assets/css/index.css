@@ -331,6 +331,9 @@ textarea:focus{
 /* ==============================================================
                         ABOUT
 =================================================================*/
+#about{
+    margin-bottom: 2%;
+}
 #about::before{
     display:block;
     content: " ";
@@ -349,25 +352,44 @@ textarea:focus{
     font-weight: bold;
 }
 
-/* ==============================================================
-                        TEAM
-=================================================================*/
-#team h1{
-    font-weight: bold;    
-}
-#team img{
-    border-radius:10px;
-    width:100%;
-    height:auto;
-}
-.team-members p{
-    font-size: 0.9rem;
-    color:rgba(210, 210, 210, 0.8)
+#about .team-img1{
+    position: relative;
+    text-align: center;
 }
 
-.team-img1{
-    position: relative;
+#about .team-img1 h5{
+    padding-top: 2%;
+    margin:0;
 }
+
+#about .team-img1 p{
+    font-size: 0.9rem;
+    color:rgba(210, 210, 210, 0.8);
+    margin:0;
+    
+}
+
+.team-img1:hover .middle i{
+    background-color: rgba(248, 114, 73, 0.705);
+    opacity: 0.8;
+}
+
+.middle i{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 36.5%;
+    left: 40%;
+    text-align: center;
+    color:#fff;
+    border-radius: 0% ;
+}
+
+.text {
+    font-size: 4rem;
+    color: #f87149;
+}
+
 .team-image{
     opacity: 1;
     display: block;
@@ -375,33 +397,9 @@ textarea:focus{
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
-    
-}
-.middle i{
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 36.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-    padding: 53px 57.5px;
-}
-.middle i{
-    color:#fff;
-}
-.team-img1:hover .middle i{
     border-radius: 10px;
-    background-color: rgba(248, 114, 73, 0.705);
-    opacity: 1;
 }
-.text {
-    font-size: 3rem;
-    color: #f87149;
-}
-
-
+ 
 /* ==============================================================
                         FOOTER
 =================================================================*/
@@ -1161,6 +1159,20 @@ address{
     
     .row hr{
         margin: 5% 0% 5% 0%;
+    }
+    .logo{
+        height: auto;
+        width: 50%;
+    }
+    .navbar-toggler{
+        background: rgb(36, 36, 36);
+    }
+    .navbar-item{
+        padding-left: 2%;
+    }
+    .contact-us{
+        width:auto;
+        border-radius: 30px;
     }  
 
     /* ==========    MODAL  =============*/
@@ -1358,17 +1370,25 @@ address{
         width: 100%;
         height: auto;
     }
+
+    .team-img1:hover .middle i{
+        background-color: rgba(248, 114, 73, 0.705);
+        opacity: 0.8;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
     .middle i{
         transition: .5s ease;
         opacity: 0;
         position: absolute;
-        top: 42.5%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
+        top: 40%;
+        left: 50%;
         text-align: center;
-        width: 100%;
-        padding-top: 40.7%;
-        padding-bottom: 42.4%;    
+        color:#fff;
+        border-radius: 0% ;
+        width:20%;
+        
     }
 
 }
